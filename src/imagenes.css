@@ -1,0 +1,71 @@
+img {
+
+    width: 30%;
+    margin-left: 11rem;
+
+}
+
+.Imagenes {
+
+    display: flex;
+    flex-wrap: wrap;
+    animation: appear 2s ease-in-out;
+    scroll-behavior: smooth;
+    /* animation-delay: calc(0.2s * var(--i)); */
+
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Diploma1,
+.Diploma2,
+.Insignia1,
+.Insignia2,
+.Insignia3 {
+    width: 30%;
+    margin-left: 11rem;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+}
+
+.Diploma1:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.Diploma2:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 2em #03a9f4aa);
+}
+
+.Insignia1:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.Insignia2:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.Insignia3:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 2em #646cffaa);
+
+
+}

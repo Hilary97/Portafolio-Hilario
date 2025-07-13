@@ -1,0 +1,171 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h2 :hover {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  filter: drop-shadow(0 0 2em #646cffaa);
+  font-size: 2px;
+  color: #dedbda;
+  margin-left: 4rem;
+
+
+}
+
+h3 {
+  font-family: fantasy;
+  font-size: 30px;
+  color: red;
+  text-shadow: 2px 2px 2px #ff0000;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+}
+
+#photo {
+  width: 15rem;
+  margin-left: 4rem;
+  border-radius: 50%;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 20px;
+  gap: 1rem;
+
+}
+
+.contacto {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  overflow: hidden;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  border: 1px solid #ccc;
+  padding: 1rem
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Animación para las tarjetas */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+.card {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  animation: float 6s ease-in-out infinite;
+  /* overflow: hidden; */
+  white-space: nowrap;
+  /* gap: 2em; */
+  animation: moveLeft 10s linear 5;
+  animation-iteration-count: infinite;
+
+
+}
+
+.card:hover {
+  animation-play-state: paused;
+
+}
+
+.read-the-docs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #dedbda;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease
+}
+
+
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: lightgray;
+    font-size: 16px;
+  }
+}
+
+/*
+@font-face {
+  font-family: "FiraCode";
+  src: url("FiraCode-Regular.ttf");
+}
+*/
