@@ -5,7 +5,7 @@ import imagenInsignia2 from "/my-first-crud-app-outstanding.png"
 import imagenInsignia3 from "/my-first-landing-page-outstanding.png"
 
 
-import "./Imagenes.css"
+import "./imagenes.css"
 
 export function Imagen(){
     return(
