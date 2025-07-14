@@ -10,6 +10,11 @@ import "./imagenes.css"
 export function Imagen(){
     return(
         <>
+           
+         
+          <p className="read-the-docs">
+                Certificados en estudios Universitarios y Insignias Digitales de Ucamp
+              </p>
             <div className="Imagenes">
                 <img src={imagenCertificados1} alt="" className="Diploma1" /> 
                 <img src={imagenCertificado2} alt="" className="Diploma2" />

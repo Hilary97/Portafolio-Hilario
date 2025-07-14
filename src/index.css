@@ -1,7 +1,7 @@
 :root {
-  --font-size: clamp(1rem, 2vw, 1.25rem);
+  /* --font-size: clamp(1rem, 2vw, 1.25rem);
   --padding-global: clamp(0.5rem, 2vw, 2rem);
-  --column-min: 200px;
+  --column-min: 200px; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--column-min), 1fr));
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -15,8 +15,8 @@
   animation: gradient 15s ease infinite;
   /* font-synthesis: none; */
   /* text-rendering: optimizeLegibility; */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 
