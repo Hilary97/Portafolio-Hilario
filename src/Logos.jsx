@@ -9,12 +9,11 @@ export function Logos(){
     return(
         <>
          <div className='card'>
-            <a href="https://vite.dev" target="_blank">
-                < img src={viteLogo} className="logo" alt="Vite logo" />
-            </a>
-            <a href="https://react.dev" target="_blank">
+         
+            < img src={viteLogo} className="logo" alt="Vite logo" />
+             
             <img src={reactLogo} className="logo react" alt="React logo" />
-            </a>
+            
             <img src={logoJavaScript} className= "logo" />
             <img src={logoGit} className= "logo" />
             <img src={logoHTML} className= "logo" />
