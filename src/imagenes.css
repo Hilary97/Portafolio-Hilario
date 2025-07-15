@@ -1,7 +1,7 @@
 img {
 
     width: 30%;
-    margin-left: 11rem;
+    margin-left:11rem;
 
 }
 
@@ -11,6 +11,7 @@ img {
     flex-wrap: wrap;
     animation: appear 2s ease-in-out;
     scroll-behavior: smooth;
+    
     /* animation-delay: calc(0.2s * var(--i)); */
 
 }
@@ -18,17 +19,17 @@ img {
 @keyframes appear {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: scale(0.9);
     }
 
     to {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: scale(1.2);
     }
 
     to {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: (1.2);        
+        transform: scale(1.2);
     }
 }
 
@@ -36,35 +37,42 @@ img {
 .Diploma2,
 .Insignia1,
 .Insignia2,
-.Insignia3 {
+.Insignia3 
+{
     width: 30%;
     margin-left: 11rem;
     margin-top: 2rem;
     transition: all 0.3s ease;
 }
 
-.Diploma1:hover {
-    transform: scale(1.1);
+.Diploma1:hover 
+{
+    transform: scale(1.2);
     filter: drop-shadow(0 0 2em #646cffaa);
 }
 
-.Diploma2:hover {
-    transform: scale(1.1);
+.Diploma2:hover 
+{
+    transform: scale(1.2);
     filter: drop-shadow(0 0 2em #03a9f4aa);
 }
 
-.Insignia1:hover {
-    transform: scale(1.1);
+.Insignia1:hover 
+{
+    transform: scale(1.2);
     filter: drop-shadow(0 0 2em #646cffaa);
 }
 
-.Insignia2:hover {
-    transform: scale(1.1);
+.Insignia2:hover 
+{
+    transform: scale(1.2);
     filter: drop-shadow(0 0 2em #646cffaa);
 }
 
-.Insignia3:hover {
-    transform: scale(1.1);
+.Insignia3:hover 
+
+{
+    transform: scale(1.2);
     filter: drop-shadow(0 0 2em #646cffaa);
 
 

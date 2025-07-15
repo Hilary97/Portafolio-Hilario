@@ -1,6 +1,7 @@
 import { useState } from 'react'
-
-import miPhoto from '/public/IMG_4747.JPG'
+import {CV} from './CV.jsx'
+import imagenCV from "/Professional Modern CV Resume.png"
+import miPhoto from '/IMG_4747.JPG'
 import './App.css'
 
 function App() {
@@ -8,9 +9,12 @@ function App() {
 
   return (
       <> 
+       
          <div className='header'>
          <h1>Hilaro Nava Jiménez</h1>
-          <img src={miPhoto} alt="" id='photo'/>
+          <img src={imagenCV} alt="" id='photo'/>
+          
+          
          </div>
         <div>
         <h2 className='informacion'>
