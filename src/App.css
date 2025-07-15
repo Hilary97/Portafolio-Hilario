@@ -35,21 +35,9 @@ h3 {
 }
 
 #photo {
-  /* transform: scale(1.2);
-  filter: drop-shadow(0 0 2em #646cffaa); */
-  
-  width: 18rem;
+  width: 15rem;
   margin-left: 4rem;
-  border-radius: 3%;
-  filter: drop-shadow(0 0 2em #646cffaa);
-  
-  
-}
-.CV:hover
-{
-    transform: scale(1.2);
-    filter: drop-shadow(0 0 2em #646cffaa);
-    width: 30%;
+  border-radius: 50%;
 }
 
 .logo {
@@ -64,8 +52,6 @@ h3 {
 
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
-  transform: scale(1.2);
-    filter: drop-shadow(0 0 2em #646cffaa);
 }
 
 .logo.react:hover {
@@ -189,22 +175,6 @@ h3 {
   }
 }
 
-@keyframes appear {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-
-    to {
-        opacity: 0;
-        transform: scale(2);
-    }
-
-    to {
-        opacity: (2);        
-        transform: scale(2);
-    }
-}
 /*
 @font-face {
   font-family: "FiraCode";
