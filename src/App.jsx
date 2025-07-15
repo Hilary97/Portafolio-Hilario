@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {CV} from './CV.jsx'
+
 import imagenCV from "/Cv_Hilario_Portafolio.png"
 import miPhoto from '/IMG_4747.JPG'
 import './App.css'
