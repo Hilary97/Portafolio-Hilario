@@ -99,3 +99,10 @@ button:focus-visible {
   }
 
 }
+@media (max-width: 768px) {
+  :root {
+    animation: none;
+    background-size: 100% 100%;
+    background-position: center;
+  }
+}
