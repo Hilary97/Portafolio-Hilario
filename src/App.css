@@ -10,13 +10,13 @@
 h2 :hover {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   filter: drop-shadow(0 0 2em #646cffaa);
-  font-size: 2px;
+  /* font-size: 2px; */
   color: #dedbda;
-  margin-left: 4rem;
-  display: grid;
-  grid-row: inherit;
-  font-size: var(--font-size);
-  padding: var(--padding-global);
+  /* margin-left: 4rem; */
+  /* display: grid; */
+  /* grid-row: inherit; */
+  /* font-size: var(--font-size);
+  padding: var(--padding-global); */
 
 
 }
