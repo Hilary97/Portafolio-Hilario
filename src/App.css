@@ -144,7 +144,7 @@ h3 {
   overflow: hidden;
   white-space: nowrap;
   /* gap: 2em; */
-  animation: moveLeft 11s linear infinite;
+  animation: moveLeft 18s linear infinite;
   animation-iteration-count: infinite;
 
 

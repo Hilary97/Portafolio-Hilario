@@ -4,6 +4,7 @@ import logoJavaScript from '/public/icons8-javascript.svg'
 import logoGit from '/public/icons8-git.svg'
 import logoHTML from '/public/icons8-html-5.svg'
 import logoCSS from '/public/icons8-css3.svg'
+import logoNode from '/public/icons8-nodo-js.svg'
 
 export function Logos(){
     return(
@@ -18,6 +19,7 @@ export function Logos(){
             <img src={logoGit} className= "logo" />
             <img src={logoHTML} className= "logo" />
             <img src={logoCSS} className= "logo" />
+            <img src={logoNode} alt="" />
           </div>
         </>
     )
