@@ -9,7 +9,7 @@ img {
 
     display: flex;
     flex-wrap: wrap;
-    animation: appear 2s ease-in-out;
+    animation: appear  ease-in-out;
     scroll-behavior: smooth;
     
     /* animation-delay: calc(0.2s * var(--i)); */
