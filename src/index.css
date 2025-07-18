@@ -11,8 +11,8 @@
   color-scheme: light dark;
  
   background: linear-gradient(-45deg, #6f2232, #8b1a44, #1a202c, #1e3a8a);
-  /* background-size: 400% 400%;
-  animation: gradient 15s ease infinite; */
+  /* background-size: 400% 400%; */
+  animation: gradient 15s ease infinite;
   /* font-synthesis: none;  */
   text-rendering: optimizeLegibility;
    /* -webkit-font-smoothing: antialiased;
