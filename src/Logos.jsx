@@ -19,7 +19,7 @@ export function Logos(){
             <img src={logoGit} className= "logo" />
             <img src={logoHTML} className= "logo" />
             <img src={logoCSS} className= "logo" />
-            <img src={logoNode} alt="" />
+            <img src={logoNode} alt="" className='logo'/>
           </div>
         </>
     )
