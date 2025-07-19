@@ -9,17 +9,16 @@ import logoNode from '/public/icons8-nodo-js.svg'
 export function Logos(){
     return(
         <>
-         <div className='card'>
-         
-            < img src={viteLogo} className="logo" alt="Vite logo" />
-             
-            <img src={reactLogo} className="logo react" alt="React logo" />
+         <div className='card' data-direccion = 'left'>
+
             
-            <img src={logoJavaScript} className= "logo" />
-            <img src={logoGit} className= "logo" />
-            <img src={logoHTML} className= "logo" />
-            <img src={logoCSS} className= "logo" />
-            <img src={logoNode} alt="" className='logo'/>
+            <div><img src={reactLogo} className="logo react" alt="React logo" /></div>
+            <div><img src={logoJavaScript} className= "logo" /></div>
+            <div>< img src={viteLogo} className="logo" alt="Vite logo" /></div>
+            <div><img src={logoGit} className= "logo" /></div>
+            <div><img src={logoHTML} className= "logo" /></div>
+            <div><img src={logoCSS} className= "logo" /></div>
+            <div><img src={logoNode} alt="" className='logo'/></div>
           </div>
         </>
     )
