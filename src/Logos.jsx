@@ -5,12 +5,12 @@ import logoGit from '/public/icons8-git.svg'
 import logoHTML from '/public/icons8-html-5.svg'
 import logoCSS from '/public/icons8-css3.svg'
 import logoNode from '/public/icons8-nodo-js.svg'
+import logoMySQl from '/public/mysql.svg'
 
 export function Logos(){
     return(
         <>
-         <div className='card' data-direccion = 'left'>
-
+          <div className='card' data-direccion = 'left'>
             
             <div><img src={reactLogo} className="logo react" alt="React logo" /></div>
             <div><img src={logoJavaScript} className= "logo" /></div>
@@ -19,6 +19,7 @@ export function Logos(){
             <div><img src={logoHTML} className= "logo" /></div>
             <div><img src={logoCSS} className= "logo" /></div>
             <div><img src={logoNode} alt="" className='logo'/></div>
+            <div><img src={logoMySQl} alt="" className='logo' /></div>
           </div>
         </>
     )
