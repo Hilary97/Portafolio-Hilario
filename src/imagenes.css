@@ -16,6 +16,7 @@ img {
     justify-content: center;
     padding: 1rem;
     
+    
 
 }
 
@@ -38,8 +39,8 @@ img {
 .Insignia2:hover,
 .Insignia3:hover,
 .Certificado:hover {
-    transform: scale(1.08);
-    filter: drop-shadow(0 0 2em #e50606aa);
+    transform: scale(1.15) rotate(-6deg);
+    filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 /* Responsive para móviles */
