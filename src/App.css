@@ -1,4 +1,6 @@
 #root {
+  color-scheme: dark;
+ 
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -6,9 +8,19 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--column-min), 1fr));
 }
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgba(255, 255, 255, 0.87);
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+ text-align: center;
+}
 
-h2 :hover {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.informacion, h2 :hover {
+  font-family: 'Montserrat', 'Segoe UI', 'Roboto', Arial, sans-serif;
   filter: drop-shadow(0 0 2em #646cffaa);
   /* font-size: 2px; */
   color: #dedbda;
