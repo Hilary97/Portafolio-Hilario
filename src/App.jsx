@@ -11,7 +11,7 @@ function App() {
       <> 
        
          <div className='header'>
-         <h1>Hilaro Nava Jiménez</h1>
+         <h1>Hilario Nava Jiménez</h1>
           <img src={imagenCV} alt="" id='photo'/>
           
           

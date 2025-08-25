@@ -1,0 +1,102 @@
+:root{
+  --gap: 2rem;
+  --card-max: 1200px;
+  --btn-radius: 12px;
+  --bg-card: rgba(16, 2, 2, 0.29);
+  --border-card: rgba(16, 2, 2, 0.29);
+}
+
+/* contenedor principal centrado y responsive */
+.Card {
+  width: 100%;
+  max-width: var(--card-max);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  justify-content: center;
+  align-items: stretch;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* cada elemento dentro del grid/flex */
+.project-item {
+  flex: 0 1 calc(33.333% - var(--gap));
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* estilo del botón con imagen */
+.project-button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: var(--btn-radius);
+  border: 1px solid var(--border-card);
+  background: var(--bg-card);
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+/* imagen dentro del botón */
+.project-button .btn-img,
+.btn-img {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* texto del proyecto */
+.project-button .title {
+  font-size: 1rem;
+  line-height: 1.1;
+  text-align: left;
+  color: #dedbda;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* hover y active */
+.project-button:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px #61dafbaa;
+}
+.project-button:active {
+  transform: translateY(-2px);
+}
+
+
+
+/* Tablet: 2 columnas */
+@media (max-width: 1024px) {
+  .project-item {
+    flex: 0 1 calc(50% - var(--gap));
+  }
+  .project-button .btn-img { width: 68px; height: 68px; }
+}
+
+/* Móvil: 1 columna, imagen sobre el texto (mejor lectura) */
+@media (max-width: 600px) {
+  .project-item {
+    flex: 0 1 100%;
+  }
+  .project-button {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.6rem;
+    padding: 0.8rem;
+  }
+  .project-button .title { font-size: 0.98rem; }
+  .project-button .btn-img { width: 64px; height: 64px; }
+}
+
+
+
