@@ -21,7 +21,7 @@ export function Proyectos(){
     return(
         <>
 
-            <h3>Mis proyectos. -Experiencia-</h3> 
+            <h3 class= "m-8">Mis proyectos. -Experiencia-</h3> 
 
             <div className="Card">
 

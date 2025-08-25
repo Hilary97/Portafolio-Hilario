@@ -24,13 +24,18 @@ img {
 .Diploma2,
 .Insignia1,
 .Insignia2,
-.Insignia3, 
-.Certificado
+.Insignia3 
 {
     width: 100%;
     max-width: 350px;
     margin-top: 2rem;
     transition: all 0.3s ease;
+}
+.Certificado
+{
+    width: 100%;
+    height: 65%;
+    margin-top: 2rem;
 }
 
 .Diploma1:hover,

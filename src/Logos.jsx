@@ -11,16 +11,16 @@ import logoMySQl from '/public/mysql.svg'
 export function Logos(){
     return(
         <>
-          <div className='card' data-direccion = 'left'>
+          <div className='card'  class="grid grid-cols-4 grid-rows-2 gap-4 ">
             
-            <div><img src={reactLogo} className="logo react" alt="React logo" /></div>
+            <div><img src={reactLogo} className="logo react" alt="React logo"  /></div>
             <div><img src={logoJavaScript} className= "logo" /></div>
             <div>< img src={viteLogo} className="logo" alt="Vite logo" /></div>
             <div><img src={logoGit} className= "logo" /></div>
             <div><img src={logoHTML} className= "logo" /></div>
             <div><img src={logoCSS} className= "logo" /></div>
-            <div><img src={logoNode} alt="" className='logo'/></div>
-            <div><img src={logoMySQl} alt="" className='logo' /></div>
+            <div><img src={logoNode} alt="" className="logo"/></div>
+            <div><img src={logoMySQl} alt="" className="logo"/></div>
           </div>
         </>
     )

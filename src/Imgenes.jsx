@@ -14,7 +14,7 @@ export function Imagen(){
           <p className="read-the-docs">
                 Certificados en estudios Universitarios y Insignias Digitales de Ucamp
           </p>
-            <div className="Imagenes">
+            <div className="Imagenes" class = "grid grid-cols-3 grid-rows-2 gap-2 mt-10">
                 <img src={imagenCertificados1} alt="" className="Diploma1" /> 
                 <img src={imagenCertificado2} alt="" className="Diploma2" />
                 <img src={imagenHackthon} alt="" className="Certificado"/>
