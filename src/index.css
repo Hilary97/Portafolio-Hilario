@@ -28,9 +28,9 @@
 } */
 
 html,body {
-  background: linear-gradient(135deg, #232526 0%, #1a202c 40%, #283e51 70%, #0f2027 100%);
+  background: linear-gradient(135deg, #232526 0%, #141923 40%, #2b455c 70%, #123848 100%);
   background-size: 300% 300%;
-  animation: gradientMove 16s ease-in-out infinite;
+  animation: gradientMove 15s ease-in-out infinite;
   margin: 0;
   font-size: var(--font-size);
   padding: var(--padding-global);

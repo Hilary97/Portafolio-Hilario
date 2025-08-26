@@ -11,7 +11,7 @@ export function Imagen(){
         <>
            
          
-          <p className="read-the-docs">
+          <p className="read-the-docs m-8" >
                 Certificados en estudios Universitarios y Insignias Digitales de Ucamp
           </p>
             <div className="Imagenes" class = "grid grid-cols-3 grid-rows-2 gap-2 mt-10">

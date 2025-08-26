@@ -15,7 +15,7 @@ function App() {
       </div>
       <div>
         <h2 className='informacion'>
-          <b style={{ color: 'rgb(46, 213, 20)' }}>Ingeniero en Sistemas</b> Computacionales con sólida formación académica y <b style={{color: 'rgb(46, 213, 20)'}}>experiencia práctica </b>  
+          <b style={{ color: 'rgb(46, 213, 20)' }}>Ingeniero en Sistemas Computacionales</b>  con sólida formación académica y <b style={{color: 'rgb(46, 213, 20)'}}>experiencia práctica </b>  
           en desarrollo web fullstack. Cuento con <b style={{ color: 'rgb(46, 213, 20)' }}>certificaciones </b> en fundamentos de desarrollo web, 
           <b style={{ color: 'rgb(46, 213, 20)' }}> diplomados </b> en análisis de sistemas computacionales y asesoría en ingeniería en computación. 
           He contribuido activamente en la creación de <b style={{ color: 'rgb(46, 213, 20)' }}>soluciones innovadoras</b> y funcionales. 
