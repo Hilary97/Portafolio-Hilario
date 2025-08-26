@@ -11,7 +11,7 @@ function App() {
     <> 
       <div className='header'>
         <h1>Hilario Nava Jiménez</h1>
-        <img src={imagenCV} alt="" id='photo'/>
+        <a href={imagenCV}> <img src={imagenCV} alt="" id='photo'/></a> 
       </div>
       <div>
         <h2 className='informacion'>

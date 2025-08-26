@@ -13,12 +13,16 @@
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Sargento Gorila', sans-serif;
   font-weight: 600;
   line-height: 1.1;
   color: #dedbda;
   text-shadow: 3px 3px 3px rgba(46, 213, 20, 0.785);
  text-align: center;
+ &:hover {
+    transform: scale(1.1);
+  }
+
  
 }
 
@@ -39,7 +43,7 @@ h1 {
 }
 
 h3 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Sargento Gorila', sans-serif;
   font-size: 30px;
   color: rgb(46, 213, 20);
   text-shadow: 3px 3px 3px #00e4f0b1;
@@ -51,9 +55,9 @@ h3 {
 
 }
 
-#photo{
-  /* transform: scale(1.2);
-  filter: drop-shadow(0 0 2em #646cffaa); */
+#photo, a:hover{
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 2em #646cffaa);
  
 
  
