@@ -28,7 +28,7 @@ export function Proyectos(){
                 <div className="project-item">
                     <button onClick={handleClick} className="project-button">
                         <img src={ImgBiblioteca} alt="Biblioteca" className="btn-img" />
-                        <span className="title">Biblioteca</span>
+                        <span className="title">Biblioteca CRUD</span>
                     </button>   
                 </div>
 

@@ -45,7 +45,7 @@ img {
 .Insignia3:hover,
 .Certificado:hover {
     transform: scale(1.15) rotate(-6deg);
-    filter: drop-shadow(0 0 2em #61dafbaa);
+    filter: drop-shadow(0 0 2em rgb(46, 213, 20));
 }
 
 /* Responsive para móviles */
