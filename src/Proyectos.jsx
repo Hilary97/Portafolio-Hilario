@@ -2,7 +2,7 @@ import "./Proyectos.css"
 import ImgBiblioteca from "/IMGBiblioteca.png";
 import ImgLandingPage from "/IMGLandingPage.png"
 import ImgRuralNet from "/IMGRuralNet.png"  
-
+import ImgAppClima from "/IMGAppClima.png"
 export function Proyectos(){
    
     const handleClick = () => {
@@ -15,8 +15,9 @@ export function Proyectos(){
         window.open("https://ornate-tarsier-3e4bfc.netlify.app/", "_blank");
     };
     const handleClick4 = () => {
-        window.open("https://ornate-tarsier-3e4bfc.netlify.app/", "_blank");
+        window.open("https://curriculumappclima.netlify.app/", "_blank");
     };
+    
 
     return(
         <>
@@ -44,6 +45,14 @@ export function Proyectos(){
                         <img src={ImgRuralNet} alt="Plataforma Rural Net" className="btn-img" />
                         <span className="title">Plataforma Rural Net</span>
                     </button>
+                </div>
+                <div className="project-item">
+                    <button onClick={handleClick4} className="project-button">
+                        <img src ={ImgAppClima} alt="App Clima" className="btn-img"/>
+                        <span className="title">App Clima</span>
+
+                    </button>
+                    
                 </div>
 
                 
