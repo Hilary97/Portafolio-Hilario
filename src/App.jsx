@@ -3,6 +3,9 @@ import { useState } from 'react'
 import imagenCV from "/Cv_Hilario_Portafolio.png"
 
 import './App.css'
+import { Imagen } from './Imgenes.jsx'
+import {Logos} from './Logos.jsx'
+import { Proyectos } from './Proyectos.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,6 +29,9 @@ function App() {
       <h3>
         Soft Skills:
       </h3>
+          <Logos />
+          <Proyectos/>
+          <Imagen />
     </>
   )
 }
