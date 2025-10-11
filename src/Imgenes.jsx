@@ -4,6 +4,7 @@ import imagenInsignia1 from "/developer-web-fullstack-beginner-outstanding.png"
 import imagenInsignia2 from "/my-first-crud-app-outstanding.png"
 import imagenInsignia3 from "/my-first-landing-page-outstanding.png"
 import imagenHackthon from "/certificado_Hackthon.jpg"
+
 import "./imagenes.css"
 
 export function Imagen(){
@@ -21,6 +22,7 @@ export function Imagen(){
                 <img src={imagenInsignia1} alt="" className="Insignia1"/>
                 <img src={imagenInsignia2} alt="" className="Insignia2"/>
                 <img src={imagenInsignia3} alt="" className="Insignia3"/>
+                
                 
             </div>   
         

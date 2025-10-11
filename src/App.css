@@ -54,22 +54,36 @@ h3 {
   }
 
 }
+.relative, button
+{
+    font-size: 1rem;
+    font-family: 'Dungeon Depths', sans-serif;
+
+      background: linear-gradient(135deg, #232526 0%, #141923 40%, #2b455c 70%, #123848 100%);
+      &:hover {
+    transform: scale(1.01);
+    filter: drop-shadow(0 0 1em rgba(46, 213, 20, 0.447));
+  }
+
+    
+   
+}
 
 #photo, a:hover{
   transform: scale(1.2);
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em rgba(46, 213, 20, 0.447));
  
 
  
   border-radius: 2%;
-  filter: drop-shadow(0 0 2em #61dafb85);
+  
   width: clamp(12rem, 20vw, 22rem);
   transition: 
-    transform 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+    transform 0.4s ease cubic-bezier(0.23, 1, 0.32, 1),
     box-shadow 0.4s cubic-bezier(0.23, 1, 0.32, 1),
     filter 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   transform: scale(1.08) rotate(-2deg);
-  box-shadow: 0 8px 32px 0 rgba(46, 213, 20, 0.447);
+ 
   
   
 }

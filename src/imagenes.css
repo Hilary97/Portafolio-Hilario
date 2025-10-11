@@ -25,6 +25,7 @@ img {
 .Insignia1,
 .Insignia2,
 .Insignia3 
+.titulo
 {
     width: 100%;
     max-width: 350px;
@@ -43,7 +44,8 @@ img {
 .Insignia1:hover,
 .Insignia2:hover,
 .Insignia3:hover,
-.Certificado:hover {
+.Certificado:hover
+{
     transform: scale(1.15) rotate(-6deg);
     filter: drop-shadow(0 0 2em rgba(46, 213, 20, 0.447));
 }

@@ -6,23 +6,32 @@ import './App.css'
 import { Imagen } from './Imgenes.jsx'
 import {Logos} from './Logos.jsx'
 import { Proyectos } from './Proyectos.jsx'
+import titulo from "/TituloUTEL.png"
 
 function App() {
   const [count, setCount] = useState(0)
+  const openTitulo = () => {
+    window.open(titulo)
+  }
 
   return (
     <> 
-      <div className='header'>
-        <h1>Hilario Nava Jiménez</h1>
+      <div className='header '>
+        <h1>Hilario Nava Jiménez</h1> 
         <a href={imagenCV}> <img src={imagenCV} alt="" id='photo'/></a> 
       </div>
+        <div class = "relative" >
+            <button onClick={openTitulo} class = "absolute bottom-0 left-0" ><b style={{color:'rgba(168, 189, 189, 1) ' }}>Titulo</b></button>
+        </div>
+        
+        
       <div>
         <h2 className='informacion'>
           <b style={{ color: 'rgb(46, 213, 20)' }}>Ingeniero en Sistemas Computacionales</b>  con sólida formación académica y <b style={{color: 'rgb(46, 213, 20)'}}>experiencia práctica </b>  
           en desarrollo web fullstack. Cuento con <b style={{ color: 'rgb(46, 213, 20)' }}>certificaciones </b> en fundamentos de desarrollo web, 
           <b style={{ color: 'rgb(46, 213, 20)' }}> diplomados </b> en análisis de sistemas computacionales y asesoría en ingeniería en computación. 
           He contribuido activamente en la creación de <b style={{ color: 'rgb(46, 213, 20)' }}>soluciones innovadoras</b> y funcionales. 
-          Me especializo en el diseño de interfaces responsiva con enfoque UX/UI. 
+          Teniendo conocimiento en el diseño de interfaces responsiva con enfoque UX/UI. 
           <b style={{ color: 'rgb(46, 213, 20)' }}> Comprometido</b> con el aprendizaje continuo, la ética profesional y el <b style={{color: 'rgb(46, 213, 20)'}}>trabajo en equipo.</b>
         </h2>
       </div>
