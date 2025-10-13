@@ -59,7 +59,7 @@ h3 {
     font-size: 1rem;
     font-family: 'Dungeon Depths', sans-serif;
 
-      background: linear-gradient(135deg, #232526 0%, #141923 40%, #2b455c 70%, #123848 100%);
+      background: rgb(255, 89, 0);
       &:hover {
     transform: scale(1.01);
     filter: drop-shadow(0 0 1em rgba(46, 213, 20, 0.447));

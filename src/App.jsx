@@ -1,48 +1,62 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import imagenCV from "/Cv_Hilario_Portafolio.png"
+import imagenCV from "/Cv_Hilario_Portafolio.png";
 
-import './App.css'
-import { Imagen } from './Imgenes.jsx'
-import {Logos} from './Logos.jsx'
-import { Proyectos } from './Proyectos.jsx'
-import titulo from "/TituloUTEL.png"
+import "./App.css";
+import { Imagen } from "./Imgenes.jsx";
+import { Logos } from "./Logos.jsx";
+import { Proyectos } from "./Proyectos.jsx";
+import titulo from "/TituloUTEL.png";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
   const openTitulo = () => {
-    window.open(titulo)
-  }
+    window.open(titulo);
+  };
 
   return (
-    <> 
-      <div className='header '>
-        <h1>Hilario Nava Jiménez</h1> 
-        <a href={imagenCV}> <img src={imagenCV} alt="" id='photo'/></a> 
+    <>
+      <div className="header ">
+        <h1>Hilario Nava Jiménez</h1>
+        <a href={imagenCV}>
+          {" "}
+          <img src={imagenCV} alt="" id="photo" />
+        </a>
       </div>
-        <div class = "relative" >
-            <button onClick={openTitulo} class = "absolute bottom-0 left-0" ><b style={{color:'rgba(168, 189, 189, 1) ' }}>Titulo</b></button>
-        </div>
-        
-        
+      <div class="relative">
+        <button onClick={openTitulo} class="absolute bottom-0 left-0">
+          <b style={{ color: "rgba(46, 239, 66, 1) " }}>Titulo</b>
+        </button>
+      </div>
+
       <div>
-        <h2 className='informacion'>
-          <b style={{ color: 'rgb(46, 213, 20)' }}>Ingeniero en Sistemas Computacionales</b>  con sólida formación académica y <b style={{color: 'rgb(46, 213, 20)'}}>experiencia práctica </b>  
-          en desarrollo web fullstack. Cuento con <b style={{ color: 'rgb(46, 213, 20)' }}>certificaciones </b> en fundamentos de desarrollo web, 
-          <b style={{ color: 'rgb(46, 213, 20)' }}> diplomados </b> en análisis de sistemas computacionales y asesoría en ingeniería en computación. 
-          He contribuido activamente en la creación de <b style={{ color: 'rgb(46, 213, 20)' }}>soluciones innovadoras</b> y funcionales. 
-          Teniendo conocimiento en el diseño de interfaces responsiva con enfoque UX/UI. 
-          <b style={{ color: 'rgb(46, 213, 20)' }}> Comprometido</b> con el aprendizaje continuo, la ética profesional y el <b style={{color: 'rgb(46, 213, 20)'}}>trabajo en equipo.</b>
+        <h2 className="informacion">
+          Ingeniero en Sistemas Computacionales,{" "}
+          <b style={{ color: "rgb(46, 213, 20)" }}>
+            recién egresado con excelencia académica.{" "}
+          </b>
+          Especializado en el ciclo completo de desarrollo web (Full-Stack) y
+          diseño de interfaces responsivas y centradas en el usuario (UX/UI).
+          Formación robusta avalada por{" "}
+          <b style={{ color: "rgb(46, 213, 20)" }}>
+            Diplomados Internacionales en Análisis de Sistemas
+          </b>{" "}
+          y un Bootcamp intensivo con certificaciones en programación. Busco
+          aplicar mi{" "}
+          <b style={{ color: "rgb(46, 213, 20" }}>sólida base algorítmica</b> y
+          mi compromiso con el{" "}
+          <b style={{ color: "rgb(46, 213, 20" }}>código mantenible</b> para
+          generar{" "}
+          <b style={{ color: "rgb(46, 213, 20)" }}>soluciones innovadoras</b>{" "}
+          como Ingeniero de Software.
         </h2>
       </div>
-      <h3>
-        Soft Skills:
-      </h3>
-          <Logos />
-          <Proyectos/>
-          <Imagen />
+      <h3>Soft Skills:</h3>
+      <Logos />
+      <Proyectos />
+      <Imagen />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
