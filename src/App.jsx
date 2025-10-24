@@ -41,8 +41,9 @@ function App() {
           <b style={{ color: "rgb(46, 213, 20)" }}>
             Diplomados Internacionales en Análisis de Sistemas
           </b>{" "}
-          y un Bootcamp intensivo con certificaciones en programación. Busco
-          aplicar mi{" "}
+          y un Bootcamp intensivo con certificaciones en programación,
+          complementando con un nivel de Ingles (A2) con certificacion en
+          Cambridge. Busco aplicar mi{" "}
           <b style={{ color: "rgb(46, 213, 20" }}>sólida base algorítmica</b> y
           mi compromiso con el{" "}
           <b style={{ color: "rgb(46, 213, 20" }}>código mantenible</b> para
