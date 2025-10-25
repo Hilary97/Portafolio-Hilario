@@ -1,8 +1,8 @@
 import imagenCertificados1 from "/1.png";
 import imagenCertificado2 from "/Copia de 1.png";
-import imagenInsignia1 from "/developer-web-fullstack-beginner-outstanding.png";
-import imagenInsignia2 from "/my-first-crud-app-outstanding.png";
-import imagenInsignia3 from "/my-first-landing-page-outstanding.png";
+import imagenInsignia1 from "/Certificado_Fullstack.png";
+import imagenInsignia2 from "/CRUD.png";
+import imagenInsignia3 from "/FirstPage.png";
 import imagenHackthon from "/certificado_Hackthon.jpg";
 import certficadoIngles from "/Constancia A2-Hilario Nava Jimenez.png";
 import certificadoJavaScript from "/Certificado_JavaScript.png";
@@ -18,14 +18,14 @@ export function Imagen() {
         className="Imagenes"
         class="grid grid-cols-3 grid-rows-3 gap-2 mt-10"
       >
-        <img src={imagenCertificados1} alt="" className="Diploma1" />
+        <img src={imagenCertificados1} alt="" className="Insignia1" />
         <img src={imagenCertificado2} alt="" className="Diploma2" />
-        <img src={certficadoIngles} alt="" className="Certificado" />
-        <img src={imagenHackthon} alt="" className="Certificado" />
-        <img src={certificadoJavaScript} alt="" className="Certificado" />
+        <img src={certficadoIngles} alt="" className="Insignia1" />
         <img src={imagenInsignia1} alt="" className="Insignia1" />
-        <img src={imagenInsignia2} alt="" className="Insignia2" />
-        <img src={imagenInsignia3} alt="" className="Insignia3" />
+        <img src={imagenInsignia2} alt="" className="Insignia1" />
+        <img src={imagenInsignia3} alt="" className="Insignia1" />
+        <img src={imagenHackthon} alt="" className="Insignia1" />
+        <img src={certificadoJavaScript} alt="" className="Insignia1" />
       </div>
     </>
   );
