@@ -49,7 +49,8 @@ function App() {
           <b style={{ color: "rgb(46, 213, 20" }}>código mantenible</b> para
           generar{" "}
           <b style={{ color: "rgb(46, 213, 20)" }}>soluciones innovadoras</b>{" "}
-          como Ingeniero de Software.
+          aplicando el conocimiento de IA, en stacks de plataformas eficientes
+          para mejorar mi productividad como Ingeniero de Software.
         </h2>
       </div>
       <h3>Soft Skills:</h3>
