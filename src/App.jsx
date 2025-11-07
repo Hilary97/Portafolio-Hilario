@@ -34,7 +34,7 @@ function App() {
           <b style={{ color: "rgba(46, 239, 66, 1)" }}>Titulo</b>
           {showTooltip && (
             <span className="tooltip-animada">
-              Oprime el botón para ver el título
+              Oprime el botón para ver el Documento
             </span>
           )}
         </button>
