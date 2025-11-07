@@ -46,7 +46,7 @@ h3 {
   font-family: 'Sargento Gorila', sans-serif;
   font-size: 30px;
   color: rgb(46, 213, 20);
-  text-shadow: 3px 3px 3px #00e4f0b1;
+  /* text-shadow: 3px 3px 3px #00e4f0b1; */
   transition: all 0.3s ease;
 
   &:hover {

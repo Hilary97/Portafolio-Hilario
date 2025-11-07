@@ -11,9 +11,8 @@ import "./imagenes.css";
 export function Imagen() {
   return (
     <>
-      <p className="read-the-docs m-8">
-        Certificados en estudios Universitarios y Insignias Digitales de Ucamp
-      </p>
+      <h3>Certificados</h3>
+
       <div
         className="Imagenes"
         class="grid grid-cols-3 grid-rows-3 gap-2 mt-10"
