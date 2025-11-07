@@ -9,6 +9,7 @@ import { Proyectos } from "./Proyectos.jsx";
 import titulo from "/TituloUTEL.png";
 
 function App() {
+  const [showTooltip, setShowTooltip] = useState(false);
   const [count, setCount] = useState(0);
   const openTitulo = () => {
     window.open(titulo);
@@ -24,8 +25,18 @@ function App() {
         </a>
       </div>
       <div class="relative">
-        <button onClick={openTitulo} class="absolute bottom-0 left-0">
-          <b style={{ color: "rgba(46, 239, 66, 1) " }}>Titulo</b>
+        <button
+          onClick={openTitulo}
+          className="absolute bottom-0 left-0"
+          onMouseEnter={() => setShowTooltip(true)}
+          onMouseLeave={() => setShowTooltip(false)}
+        >
+          <b style={{ color: "rgba(46, 239, 66, 1)" }}>Titulo</b>
+          {showTooltip && (
+            <span className="tooltip-animada">
+              Oprime el botón para ver el título
+            </span>
+          )}
         </button>
       </div>
 
