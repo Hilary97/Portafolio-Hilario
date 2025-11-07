@@ -64,7 +64,7 @@ function App() {
           para mejorar mi productividad como Ingeniero de Software.
         </h2>
       </div>
-      <h3>Soft Skills:</h3>
+      <h3>Hard Skills:</h3>
       <Logos />
       <Proyectos />
       <Imagen />
