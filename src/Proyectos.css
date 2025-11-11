@@ -67,7 +67,7 @@
 /* hover y active */
 .project-button:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(46, 213, 20, 0.447);
+  box-shadow: 0 12px 30px oklch(59.6% 0.145 163.225);
 }
 .project-button:active {
   transform: translateY(-2px);

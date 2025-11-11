@@ -17,13 +17,20 @@ h1 {
   font-weight: 600;
   line-height: 1.1;
   color: #dedbda;
-  text-shadow: 3px 3px 3px rgba(46, 213, 20, 0.785);
+  text-shadow: 3px 3px 3px oklch(59.6% 0.145 163.225);
  text-align: center;
  &:hover {
     transform: scale(1.1);
   }
 
  
+}
+.sargento-gorila {
+  font-family: 'Sargento Gorila', sans-serif;
+}
+.imagen
+{
+  border-radius: 100%;
 }
 
 .informacion {
@@ -45,7 +52,7 @@ h1 {
 h3 {
   font-family: 'Sargento Gorila', sans-serif;
   font-size: 30px;
-  color: rgb(46, 213, 20);
+  color: oklch(59.6% 0.145 163.225); 
   /* text-shadow: 3px 3px 3px #00e4f0b1; */
   transition: all 0.3s ease;
 
@@ -54,17 +61,8 @@ h3 {
   }
 
 }
-.relative, button
-{
-    font-size: 1rem;
-    font-family: 'Dungeon Depths', sans-serif;
 
-      background: rgb(255, 89, 0);
-      &:hover {
-    transform: scale(1.01);
-    filter: drop-shadow(0 0 1em rgba(46, 213, 20, 0.447));
-  }
-}
+
 .tooltip-animada {
   display: inline-block;
   margin-left: 12px;
@@ -88,7 +86,7 @@ h3 {
     opacity: 1;
   }
 }
-#photo, a:hover{
+#photo{
   transform: scale(1.2);
   filter: drop-shadow(0 0 2em rgba(46, 213, 20, 0.447));
  
@@ -106,12 +104,7 @@ h3 {
   
   
 }
-/* .CV:hover
-{
-    transform: scale(1.2);
-    filter: drop-shadow(0 0 2em #646cffaa);
-    width: 30%;
-} */
+
 
 .logo {
   
@@ -133,8 +126,8 @@ h3 {
 
 .logo:hover {
   transform: scale(1.15) rotate(-6deg);
-  filter: drop-shadow(0 0 2em rgba(46, 213, 20, 0.561));
-  box-shadow: 0 8px 32px 0 rgba(46, 213, 20, 0.447)
+  filter: drop-shadow(0 0 2em oklch(59.6% 0.145 163.225));
+  box-shadow: 0 8px 32px 0 oklch(59.6% 0.145 163.225);
 }
 
 .logo.react:hover {
