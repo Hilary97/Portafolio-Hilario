@@ -22,8 +22,9 @@ function App() {
   return (
     <>
       <ParticlesBackground />
-      <Header />
+
       <div className="relative z-10">
+        <Header />
         <div className="header">
           <div class="rounded-xl">
             <img
