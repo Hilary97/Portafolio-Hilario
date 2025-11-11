@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import imagenCV from "/Cv_Hilario_Portafolio.png";
 
 import "./App.css";
@@ -36,6 +36,39 @@ function App() {
           imagen bg-cyan-500 shadow-lg shadow-cyan-500/50"
               alt=""
             />
+            <div class="flex flex-nowrap  md:gap-5">
+              <a
+                href="https://www.linkedin.com/in/hilario-nava"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-500 hover:text-emerald-400 text-3xl transition"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://github.com/Hilary97"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-500 hover:text-emerald-400 text-3xl transition"
+                aria-label="GitHub"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="mailto:navahilario499@gmail.com"
+                className="text-emerald-500 hover:text-emerald-400 text-3xl transition"
+                aria-label="Email"
+              >
+                <FaEnvelope />
+              </a>
+              <a
+                href="https://wa.me/523313023706"
+                className="text-emerald-500 hover:text-emerald-400 text-3xl transition"
+              >
+                <FaWhatsapp />
+              </a>
+            </div>
           </div>
         </div>
 

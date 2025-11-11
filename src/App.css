@@ -133,7 +133,7 @@ h3 {
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
+/* 
 .header {
   display: grid;
   grid-auto-flow: column;
@@ -141,7 +141,7 @@ h3 {
   padding: 20px;
   gap: 1rem;
 
-}
+} */
 
 .contacto {
 
