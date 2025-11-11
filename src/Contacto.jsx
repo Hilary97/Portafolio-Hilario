@@ -26,9 +26,9 @@ export function Contacto() {
 
   return (
     <section className="w-full max-w-2xl mx-auto px-4 py-10 " id="contacto">
-      <h2 className="text-3xl font-bold text-center text-emerald-400 dark:text-emerald-300 mb-2 font-sans">
-        Construyamos algo juntos
-      </h2>
+      <h3 className="text-3xl font-bold text-center text-emerald-400 dark:text-emerald-300 mb-2 font-sans">
+        Contáctame
+      </h3>
       <p className="text-center text-gray-700 dark:text-gray-300 mb-8">
         Abierto a nuevas oportunidades y colaboraciones. ¡No dudes en
         contactarme!
