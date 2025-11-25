@@ -74,24 +74,26 @@ function App() {
 
         <div>
           <h2 className="informacion">
-            Ingeniero en Sistemas Computacionales,{" "}
-            <b class="text-emerald-600">
-              recién egresado con excelencia académica.{" "}
-            </b>
-            Especializado en el ciclo completo de desarrollo web (Full-Stack) y
-            diseño de interfaces responsivas y centradas en el usuario (UX/UI).
-            Formación robusta avalada por{" "}
-            <b class="text-emerald-600">
-              Diplomados Internacionales en Análisis de Sistemas
+            <b class="text-emerald-600">Ingeniero de Software Full Stack</b>{" "}
+            enfocado en Desarrollo Web Moderno y{" "}
+            <b className="text-emerald-600">Arquitectura de Software.</b>{" "}
+            Combino una formación técnica rigurosa{" "}
+            <b className="text-emerald-600">Excelencia Académica</b> con dominio
+            práctico del stack MERN/PERN{" "}
+            <b className="text-emerald-600">React.js, Node.js, MySQL.</b> Mi
+            enfoque no es solo escribir código, sino construir soluciones
+            eficientes con{" "}
+            <b className="text-emerald-600">
+              diseño centrado en el usuario UX/UI
             </b>{" "}
-            y un Bootcamp intensivo con certificaciones en programación,
-            complementando con un nivel de Ingles (A2) con certificacion en
-            Cambridge. Busco aplicar mi{" "}
-            <b class="text-emerald-600">sólida base algorítmica</b> y mi
-            compromiso con el <b class="text-emerald-600">código mantenible</b>{" "}
-            para generar <b class="text-emerald-600">soluciones innovadoras</b>{" "}
-            aplicando el conocimiento de IA, en stacks de plataformas eficientes
-            para mejorar mi productividad como Ingeniero de Software.
+            y control de versiones profesional{" "}
+            <b className="text-emerald-600">Git/GitHub.</b> Lo que traigo a la
+            mesa: Capacidad para desarrollar aplicaciones completas{" "}
+            <b className="text-emerald-600">Frontend + Backend.</b> Mentalidad
+            de optimización y <b className="text-emerald-600">código limpio.</b>{" "}
+            Adaptabilidad rápida a nuevas tecnologías y{" "}
+            <b className="text-emerald-600">entornos ágiles.</b> Listo para
+            resolver problemas de negocio reales mediante tecnología escalable."
           </h2>
         </div>
         <h3>Hard Skills:</h3>
