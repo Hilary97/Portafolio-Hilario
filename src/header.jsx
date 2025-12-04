@@ -17,13 +17,20 @@ export function Header() {
               <li>
                 <a
                   href={titulo}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-emerald-500  transition  "
                 >
                   Titulo
                 </a>
               </li>
               <li>
-                <a href={CV} className="hover:text-emerald-500 transition">
+                <a
+                  href={CV}
+                  className="hover:text-emerald-500 transition"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   CV
                 </a>
               </li>
