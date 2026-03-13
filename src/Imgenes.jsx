@@ -6,6 +6,7 @@ import imagenInsignia3 from "/FirstPage.png";
 import imagenHackthon from "/certificado_Hackthon.jpg";
 import certficadoIngles from "/Constancia A2-Hilario Nava Jimenez.png";
 import certificadoJavaScript from "/Certificado_JavaScript.png";
+import certificadoBIG from "/CertificadoBIG.png"
 import "./imagenes.css";
 
 export function Imagen() {
@@ -25,6 +26,8 @@ export function Imagen() {
         <img src={imagenInsignia3} alt="" className="Insignia1" />
         <img src={imagenHackthon} alt="" className="Insignia1" />
         <img src={certificadoJavaScript} alt="" className="Insignia1" />
+        <img src={certificadoBIG} alt="" className="Insignia1" />
+
       </div>
     </>
   );
