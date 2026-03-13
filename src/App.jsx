@@ -93,7 +93,8 @@ function App() {
             de optimización y <b className="text-emerald-600">código limpio.</b>{" "}
             Adaptabilidad rápida a nuevas tecnologías y{" "}
             <b className="text-emerald-600">entornos ágiles.</b> Listo para
-            resolver problemas de negocio reales mediante tecnología escalable."
+            resolver problemas de negocio reales mediante tecnología escalable. Aplicando en gran medida
+            herramientas y metodologías actuales con <b className="text-emerald-600">agentes de IA</b> potecializando mi desarrollo profesional."
           </h2>
         </div>
         <h3>Hard Skills:</h3>
