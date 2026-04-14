@@ -8,7 +8,7 @@ export function Proyectos() {
     window.open("https://hilary97.github.io/Proyecto_CRUD/", "_blank");
   };
   const handleClick2 = () => {
-    window.open("https://phenomenal-starburst-b2768c.netlify.app/", "_blank");
+    window.open("https://anloslayos.netlify.app/", "_blank");
   };
   const handleClick3 = () => {
     window.open("https://ornate-tarsier-3e4bfc.netlify.app/", "_blank");
