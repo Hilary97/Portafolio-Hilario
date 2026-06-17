@@ -6,19 +6,22 @@ import ImgAppClima from "/IMGAppClima.png";
 import ImgNeo from "/IMGNeo.svg";
 export function Proyectos() {
   const handleClick = () => {
-    window.open("https://hilary97.github.io/Proyecto_CRUD/", "_blank");
+    window.open("https://github.com/Hilary97/Proyecto_CRUD.git", "_blank");
   };
   const handleClick2 = () => {
-    window.open("https://anloslayos.netlify.app/", "_blank");
+    window.open("https://github.com/Hilary97/Proyecto_Bootcamp.git", "_blank");
   };
   const handleClick3 = () => {
-    window.open("https://ornate-tarsier-3e4bfc.netlify.app/", "_blank");
+    window.open(
+      "https://github.com/Hilary97/Codigo-de-Plataforma-RuralNet.git",
+      "_blank",
+    );
   };
   const handleClick4 = () => {
-    window.open("https://curriculumappclima.netlify.app/", "_blank");
+    window.open("https://github.com/Hilary97/App-del-clima..git", "_blank");
   };
   const handleClick5 = () => {
-    window.open("https://neo-ashy-seven.vercel.app/", "_blank");
+    window.open("https://github.com/Hilary97/neo", "_blank");
   };
 
   return (
