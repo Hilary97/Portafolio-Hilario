@@ -18,7 +18,7 @@ export function Proyectos() {
     window.open("https://curriculumappclima.netlify.app/", "_blank");
   };
   const handleClick5 = () => {
-    window.open("https://github.com/Hilary97/neo", "_blank");
+    window.open("https://neo-ashy-seven.vercel.app/", "_blank");
   };
 
   return (
@@ -59,7 +59,11 @@ export function Proyectos() {
 
         <div className="project-item">
           <button onClick={handleClick5} className="project-button">
-            <img src={ImgNeo} alt="Neo Hot Sale Landing Page" className="btn-img neo-img" />
+            <img
+              src={ImgNeo}
+              alt="Neo Hot Sale Landing Page"
+              className="btn-img neo-img"
+            />
             <span className="title">Neo — Hot Sale Landing</span>
           </button>
         </div>
