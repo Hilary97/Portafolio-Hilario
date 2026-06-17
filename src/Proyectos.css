@@ -67,6 +67,13 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+/* neo project — SVG placeholder needs contain instead of cover */
+.neo-img {
+  object-fit: contain;
+  background: #0f0c29;
+  border-radius: 8px;
+}
+
 /* hover y active */
 .project-button:hover {
   transform: translateY(-6px);

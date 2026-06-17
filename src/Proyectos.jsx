@@ -3,6 +3,7 @@ import ImgBiblioteca from "/IMGBiblioteca.png";
 import ImgLandingPage from "/IMGLandingPage.png";
 import ImgRuralNet from "/IMGRuralNet.png";
 import ImgAppClima from "/IMGAppClima.png";
+import ImgNeo from "/IMGNeo.svg";
 export function Proyectos() {
   const handleClick = () => {
     window.open("https://hilary97.github.io/Proyecto_CRUD/", "_blank");
@@ -15,6 +16,9 @@ export function Proyectos() {
   };
   const handleClick4 = () => {
     window.open("https://curriculumappclima.netlify.app/", "_blank");
+  };
+  const handleClick5 = () => {
+    window.open("https://github.com/Hilary97/neo", "_blank");
   };
 
   return (
@@ -50,6 +54,13 @@ export function Proyectos() {
           <button onClick={handleClick4} className="project-button">
             <img src={ImgAppClima} alt="App Clima" className="btn-img" />
             <span className="title">GeoWeather</span>
+          </button>
+        </div>
+
+        <div className="project-item">
+          <button onClick={handleClick5} className="project-button">
+            <img src={ImgNeo} alt="Neo Hot Sale Landing Page" className="btn-img neo-img" />
+            <span className="title">Neo — Hot Sale Landing</span>
           </button>
         </div>
       </div>
