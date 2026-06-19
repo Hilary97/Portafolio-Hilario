@@ -74,28 +74,30 @@ function App() {
 
         <div>
           <h2 className="informacion">
-            <b class="text-emerald-600">Ingeniero de Software Full Stack</b>{" "}
-            enfocado en Desarrollo Web Moderno y{" "}
-            <b className="text-emerald-600">Arquitectura de Software.</b>{" "}
-            Combino una formación técnica rigurosa{" "}
-            <b className="text-emerald-600">Excelencia Académica</b> con dominio
-            práctico del stack MERN/PERN{" "}
-            <b className="text-emerald-600">React.js, Node.js, MySQL.</b> Mi
-            enfoque no es solo escribir código, sino construir soluciones
-            eficientes con{" "}
-            <b className="text-emerald-600">
-              diseño centrado en el usuario UX/UI
-            </b>{" "}
-            y control de versiones profesional{" "}
-            <b className="text-emerald-600">Git/GitHub.</b> Lo que traigo a la
-            mesa: Capacidad para desarrollar aplicaciones completas{" "}
-            <b className="text-emerald-600">Frontend + Backend.</b> Mentalidad
-            de optimización y <b className="text-emerald-600">código limpio.</b>{" "}
-            Adaptabilidad rápida a nuevas tecnologías y{" "}
-            <b className="text-emerald-600">entornos ágiles.</b> Listo para
-            resolver problemas de negocio reales mediante tecnología escalable. Aplicando en gran medida
-            herramientas y metodologías actuales con <b className="text-emerald-600">agentes de IA</b> potecializando mi desarrollo profesional."
+            <b className="text-emerald-600">Ingeniero de Software Full Stack</b>{" "}
+            especializado en Desarrollo Web Moderno y Arquitectura de Software.
           </h2>
+          <p className="informacion">
+            Llevé un negocio de solo pagos en efectivo presencial a vender
+            online: integré{" "}
+            <b className="text-emerald-600">PayPal y Mercado Pago</b> en una
+            landing construida en días aplicando{" "}
+            <b className="text-emerald-600">agentes de IA</b> en el flujo de
+            desarrollo.
+          </p>
+          <p className="informacion">
+            Stack:{" "}
+            <b className="text-emerald-600">
+              React.js, JavaScript, Node.js, MySQL, Firebase, Git/GitHub
+            </b>
+            . Desarrollo aplicaciones completas Frontend + Backend con UX/UI
+            y código limpio, potenciando mi flujo con Claude, GitHub Copilot
+            y n8n. Certificaciones en{" "}
+            <b className="text-emerald-600">
+              Full Stack, JavaScript e inglés A2
+            </b>{" "}
+            (ver sección de certificados).
+          </p>
         </div>
         <h3>Hard Skills:</h3>
         <Logos />
