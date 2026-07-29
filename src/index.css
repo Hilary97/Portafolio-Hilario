@@ -1,100 +1,60 @@
 @import "tailwindcss";
-:root {
-  /* --font-size: clamp(1rem, 2vw, 1.25rem);
-  --padding-global: clamp(0.5rem, 2vw, 2rem);
-  --column-min: 200px; */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--column-min), 1fr));
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  /* color-scheme: dark;
-  background: linear-gradient(135deg, #232526 0%, #1a202c 40%, #283e51 70%, #0f2027 100%);
-  background-size: 300% 300%;
-  animation: gradientMove 16s ease-in-out infinite; */
-  /* font-synthesis: none;  */
-  /* text-rendering: optimizeLegibility; */
-   /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;  */
+@theme {
+  --color-abyss: #0b0817;
+  --color-panel: #151029;
+  --color-edge: #2a2150;
+  --color-mist: #eeeafb;
+  --color-dusk: #a79fc9;
+  --color-lilac: #a78bfa;
+  --color-iris: #7c5cf6;
+  --color-ember: #ffb454;
+
+  --font-display: "Syne", ui-sans-serif, sans-serif;
+  --font-body: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
-
-
-
-/* a:hover {
-  color: #535bf2;
-} */
-
-html,body {
-  background: linear-gradient(135deg, #232526 0%, #141923 40%, #2b455c 70%, #123848 100%);
-  background-size: 300% 300%;
-  animation: gradientMove 15s ease-in-out infinite;
+body {
   margin: 0;
-  font-size: var(--font-size);
-  padding: var(--padding-global);
-  display: flex;
-  place-items: auto;
-  min-width: 320px;
   min-height: 100vh;
+  background-color: var(--color-abyss);
+  color: var(--color-mist);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
-
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+::selection {
+  background: var(--color-iris);
+  color: var(--color-mist);
 }
 
-button:hover {
-  border-color: #646cff;
+/* Outlined display text (hero surname) */
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color-lilac);
 }
 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* Faint blueprint grid, faded toward the bottom */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgb(167 139 250 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(167 139 250 / 0.06) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(
+    ellipse 90% 65% at 50% 0%,
+    black,
+    transparent 75%
+  );
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-   
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  
-
-
-
-}
-
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@media (max-width: 768px) {
-  :root {
-    background: linear-gradient(135deg, #232526 0%, #283e51 70%, #0f2027 100%);
-    background-size: 300% 300%;
-    animation: gradientMove 16s ease-in-out infinite;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
