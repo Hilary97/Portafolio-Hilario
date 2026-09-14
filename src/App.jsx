@@ -14,18 +14,20 @@ function Sobre() {
         <Reveal>
           <Eyebrow>sobre-mi</Eyebrow>
           <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
-            De la idea a producción
+            Software para negocios reales
           </h2>
         </Reveal>
 
         <div className="flex flex-col gap-6 text-lg leading-relaxed text-dusk">
           <Reveal delay={0.05}>
             <p>
+              Desarrollo software para negocios reales. Mi punto de venta ya
+              se usa en una pizzería local: integra catálogo, ventas en efectivo
+              con cálculo de cambio, devoluciones y cierre de caja con{" "}
               <b className="font-semibold text-ember">
-                Ingeniero de Software Full Stack
-              </b>{" "}
-              especializado en Desarrollo Web Moderno y Arquitectura de
-              Software.
+                React, TypeScript y Supabase (PostgreSQL)
+              </b>
+              .
             </p>
           </Reveal>
           <Reveal delay={0.1}>
@@ -33,14 +35,19 @@ function Sobre() {
               Llevé un negocio de solo pagos en efectivo presencial a vender
               online: integré{" "}
               <b className="font-semibold text-ember">PayPal y Mercado Pago</b>{" "}
-              en una landing construida en días aplicando{" "}
+              en Neo, una landing construida en días aplicando{" "}
               <b className="font-semibold text-ember">agentes de IA</b> en el
               flujo de desarrollo.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
             <p>
-              Stack:{" "}
+              Soy{" "}
+              <b className="font-semibold text-ember">
+                Ingeniero de Software Full Stack
+              </b>
+              , especializado en Desarrollo Web Moderno y Arquitectura de
+              Software. Mi stack incluye{" "}
               <b className="font-semibold text-mist">
                 React.js, JavaScript, Node.js, MySQL, Firebase, Git/GitHub
               </b>
