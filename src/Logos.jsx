@@ -6,25 +6,33 @@ import logoHTML from "/icons8-html-5.svg";
 import logoCSS from "/icons8-css3.svg";
 import logoNode from "/icons8-nodo-js.svg";
 import logoMySQL from "/mysql.svg";
-import logoFirebase from "/Firebase_Studio_logo.svg";
 import logoClaude from "/claude-color.svg";
-import logoN8n from "/n8n-color.svg";
-import logoCopilot from "/copilot-color.svg";
+import logoNeovim from "/neovim.svg";
+import logoVercel from "/vercel.svg";
+import logoNext from "/nextjs.svg";
+import logoSupabase from "/supabase.svg";
+import logoOpenAI from "/openai.svg";
+import logoTypeScript from "/typescript.svg";
+import logoGentleAI from "/gentle-ai.png";
 import { Reveal, Stagger, Item, Eyebrow } from "./motion.jsx";
 
 const stack = [
   { src: reactLogo, name: "React" },
   { src: logoJavaScript, name: "JavaScript" },
+  { src: logoTypeScript, name: "TypeScript" },
   { src: viteLogo, name: "Vite" },
   { src: logoNode, name: "Node.js" },
+  { src: logoNext, name: "Next.js" },
   { src: logoMySQL, name: "MySQL" },
-  { src: logoFirebase, name: "Firebase" },
+  { src: logoSupabase, name: "Supabase" },
   { src: logoHTML, name: "HTML5" },
   { src: logoCSS, name: "CSS3" },
   { src: logoGit, name: "Git" },
+  { src: logoVercel, name: "Vercel" },
+  { src: logoNeovim, name: "Neovim" },
   { src: logoClaude, name: "Claude" },
-  { src: logoCopilot, name: "Copilot" },
-  { src: logoN8n, name: "n8n" },
+  { src: logoOpenAI, name: "ChatGPT" },
+  { src: logoGentleAI, name: "Gentle AI" },
 ];
 
 export function Logos() {

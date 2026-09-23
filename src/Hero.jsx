@@ -55,7 +55,7 @@ export function Hero() {
 
           <motion.p {...enter(0.2)} className="mt-6 max-w-xl text-lg text-dusk">
             <b className="font-semibold text-mist">
-              Ingeniero de Software Full Stack
+              Ingeniero de Software "Potenciado con IA"
             </b>{" "}
             especializado en Desarrollo Web Moderno y Arquitectura de Software.
           </motion.p>

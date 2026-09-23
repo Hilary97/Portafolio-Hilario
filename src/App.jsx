@@ -14,15 +14,15 @@ function Sobre() {
         <Reveal>
           <Eyebrow>sobre-mi</Eyebrow>
           <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
-            Software para negocios reales
+            Software para aplicaciones Web
           </h2>
         </Reveal>
 
         <div className="flex flex-col gap-6 text-lg leading-relaxed text-dusk">
           <Reveal delay={0.05}>
             <p>
-              Desarrollo software para negocios reales. Mi punto de venta ya
-              se usa en una pizzería local: integra catálogo, ventas en efectivo
+              Desarrollo software para negocios reales. Mi punto de venta ya se
+              usa en una pizzería local: integra catálogo, ventas en efectivo
               con cálculo de cambio, devoluciones y cierre de caja con{" "}
               <b className="font-semibold text-ember">
                 React, TypeScript y Supabase (PostgreSQL)
@@ -44,16 +44,17 @@ function Sobre() {
             <p>
               Soy{" "}
               <b className="font-semibold text-ember">
-                Ingeniero de Software Full Stack
+                Ingeniero en Sistemas Computacionales
               </b>
               , especializado en Desarrollo Web Moderno y Arquitectura de
               Software. Mi stack incluye{" "}
               <b className="font-semibold text-mist">
-                React.js, JavaScript, Node.js, MySQL, Firebase, Git/GitHub
+                React.js, JavaScript, TypeScript, Node.js, MySQL, Supabase,
+                Git/GitHub
               </b>
               . Desarrollo aplicaciones completas Frontend + Backend con UX/UI y
-              código limpio, potenciando mi flujo con Claude, GitHub Copilot y
-              n8n. Certificaciones en{" "}
+              código limpio, potenciando mi flujo con Claude y ChatGPT,
+              coordinados mediante el harness de Gentle AI. Certificaciones en{" "}
               <b className="font-semibold text-mist">
                 Full Stack, JavaScript e inglés A2
               </b>{" "}
