@@ -5,16 +5,17 @@ import ImgRuralNet from "/IMGRuralNet.png";
 import ImgAppClima from "/IMGAppClima.png";
 import ImgNeo from "/IMGNeo.svg";
 import ImgInvitaciones from "/IMGInvitaciones.svg";
+import ImgPizzeria from "/IMGPizzeria.png";
 import { Reveal, Stagger, Item, TiltCard, Eyebrow } from "./motion.jsx";
 
 const proyectos = [
   {
-    img: ImgInvitaciones,
+    img: ImgPizzeria,
     contain: true,
-    alt: "Ilustración de una invitación y un sobre en tonos dorados",
-    titulo: "Invitaciones digitales",
-    desc: "Landing en HTML, CSS y JavaScript para promocionar invitaciones de bodas, quinceañeras, cumpleaños y eventos corporativos, con enlaces de contacto por WhatsApp y correo.",
-    url: "https://github.com/Hilary97/invitaciones-web",
+    alt: "Ilustración de marca del punto de venta para pizzería",
+    titulo: "Punto de venta para pizzería",
+    desc: "En uso en una pizzería local: integra catálogo, ventas en efectivo con cálculo de cambio, devoluciones y cierre de caja. Desarrollado con React, TypeScript y Supabase (PostgreSQL).",
+    url: "https://github.com/Hilary97/punto-venta-pizzeria",
     destacado: true,
   },
   {
@@ -23,6 +24,14 @@ const proyectos = [
     titulo: "Neo — Hot Sale Landing",
     desc: "Landing de venta con pagos online: PayPal y Mercado Pago integrados, construida en días con agentes de IA.",
     url: "https://github.com/Hilary97/neo",
+  },
+  {
+    img: ImgInvitaciones,
+    contain: true,
+    alt: "Ilustración de una invitación y un sobre en tonos dorados",
+    titulo: "Invitaciones digitales",
+    desc: "Landing en HTML, CSS y JavaScript para promocionar invitaciones de bodas, quinceañeras, cumpleaños y eventos corporativos, con enlaces de contacto por WhatsApp y correo.",
+    url: "https://github.com/Hilary97/invitaciones-web",
   },
   {
     img: ImgBiblioteca,
