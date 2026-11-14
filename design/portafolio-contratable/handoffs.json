@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "chosen": "01-recruiter-first.html",
+  "handoffs": {
+    "01-recruiter-first.html": {
+      "status": "implemented",
+      "queued": false,
+      "sentAt": "2026-11-14T04:23:23.771Z",
+      "startedAt": "2026-11-14T04:24:03.198Z",
+      "implementedAt": "2026-11-14T04:24:43.273Z",
+      "note": "Hero, case studies, grouped stack, CTA contact and CV button implemented in React/Tailwind. Sobre and Certificados kept after stack.",
+      "previewUrl": "http://localhost:5173/"
+    }
+  }
+}

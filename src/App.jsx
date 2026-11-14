@@ -9,7 +9,7 @@ import { Reveal, Eyebrow } from "./motion.jsx";
 
 function Sobre() {
   return (
-    <section id="sobre-mi" className="py-24">
+    <section id="sobre-mi" className="border-t border-edge/60 py-24">
       <div className="grid gap-10 lg:grid-cols-[1fr_1.5fr]">
         <Reveal>
           <Eyebrow>sobre-mi</Eyebrow>
@@ -72,9 +72,9 @@ function App() {
       <Header />
       <main className="relative mx-auto max-w-6xl px-5 sm:px-8">
         <Hero />
-        <Sobre />
         <Proyectos />
         <Logos />
+        <Sobre />
         <Imagen />
         <Contacto />
       </main>

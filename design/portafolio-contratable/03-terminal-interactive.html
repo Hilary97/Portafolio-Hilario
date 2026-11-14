@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hilario@nava:~ — Portafolio</title>
+<style>
+  :root{--abyss:#0b0817;--panel:#151029;--edge:#2a2150;--mist:#eeeafb;--dusk:#a79fc9;--lilac:#a78bfa;--iris:#7c5cf6;--ember:#ffb454;
+    --display:ui-sans-serif,system-ui,sans-serif;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--abyss);color:var(--mist);font-family:var(--display);line-height:1.5;
+    background-image:linear-gradient(to right,rgb(167 139 250 / .06) 1px,transparent 1px),linear-gradient(to bottom,rgb(167 139 250 / .06) 1px,transparent 1px);background-size:64px 64px}
+  a{color:inherit}
+  :focus-visible{outline:2px solid var(--ember);outline-offset:3px;border-radius:6px}
+  .wrap{max-width:1180px;margin:0 auto;padding:40px 32px}
+  .hero{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center;min-height:640px}
+  .eyebrow{font:14px var(--mono);color:var(--dusk)}.eyebrow b{color:var(--ember);font-weight:400}
+  h1{font-size:76px;line-height:.95;margin:16px 0 20px;letter-spacing:-.03em;font-weight:900}
+  h1 span{display:block;color:transparent;-webkit-text-stroke:2px var(--lilac)}
+  .lead{font-size:19px;color:var(--dusk);margin:0 0 28px;max-width:46ch}.lead b{color:var(--mist)}
+  .ctas{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-flex;align-items:center;min-height:46px;padding:0 22px;border-radius:999px;font-weight:700;text-decoration:none;border:1px solid var(--edge);transition:transform .2s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn.primary{background:var(--ember);color:var(--abyss);border-color:var(--ember)}
+  /* Terminal */
+  .term{border:1px solid var(--edge);border-radius:20px;background:rgb(21 16 41 / .92);box-shadow:0 30px 80px -30px rgb(124 92 246 / .6);overflow:hidden}
+  .bar{display:flex;align-items:center;gap:8px;padding:12px 16px;border-bottom:1px solid var(--edge);font:12px var(--mono);color:var(--dusk)}
+  .bar i{width:11px;height:11px;border-radius:50%;background:var(--edge)}.bar i:first-child{background:var(--ember)}
+  .bar span{margin-left:8px}
+  .tabs{display:flex;gap:6px;padding:12px 16px 0;flex-wrap:wrap}
+  .tabs button{font:13px var(--mono);background:transparent;color:var(--dusk);border:1px solid var(--edge);border-radius:999px;padding:8px 14px;min-height:36px;cursor:pointer}
+  .tabs button[aria-selected="true"]{background:var(--iris);color:var(--mist);border-color:var(--iris)}
+  .tabs button:hover{color:var(--mist)}
+  .screen{font:14px/1.7 var(--mono);padding:18px 20px 24px;min-height:340px}
+  .screen .p{color:var(--ember)}.screen .k{color:var(--lilac)}.screen .m{color:var(--dusk)}
+  .screen a{color:var(--lilac)}
+  .caret{display:inline-block;width:8px;height:16px;background:var(--ember);vertical-align:-3px;animation:blink 1s steps(2) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .hint{font:12px var(--mono);color:var(--dusk);padding:0 20px 16px}
+  /* Projects */
+  section{padding:88px 0;border-top:1px solid var(--edge)}
+  .sec-h{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:32px}
+  h2{font-size:40px;margin:6px 0 0;letter-spacing:-.02em}
+  .bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+  .tile{border:1px solid var(--edge);border-radius:24px;background:rgb(21 16 41 / .75);padding:24px;text-decoration:none;display:flex;flex-direction:column;gap:10px;transition:border-color .2s,transform .2s}
+  .tile:hover{border-color:var(--lilac);transform:translateY(-3px)}
+  .tile.big{grid-column:span 4;grid-row:span 2;background:radial-gradient(circle at 85% 15%,rgb(255 180 84 / .18),transparent 45%),radial-gradient(circle at 10% 90%,rgb(124 92 246 / .3),transparent 50%),var(--panel)}
+  .tile.mid{grid-column:span 2}
+  .tile.sm{grid-column:span 2}
+  .tile h3{margin:0;font-size:20px}.tile.big h3{font-size:34px;line-height:1.1}
+  .tile p{margin:0;color:var(--dusk);font-size:14px}.tile.big p{font-size:17px;max-width:44ch}
+  .tile .tag{font:12px var(--mono);color:var(--ember)}
+  .tile .go{margin-top:auto;font:13px var(--mono);color:var(--lilac)}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
+  .chips li{font:12px var(--mono);border:1px solid var(--edge);border-radius:999px;padding:3px 10px}
+  .contact{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+  .contact h2{font-size:52px;line-height:1}
+  .links{display:grid;gap:10px}
+  .links a{display:flex;justify-content:space-between;align-items:center;min-height:56px;border:1px solid var(--edge);border-radius:16px;padding:0 20px;text-decoration:none;font:15px var(--mono);background:var(--panel)}
+  .links a:hover{border-color:var(--ember);color:var(--ember)}
+  .links a span{color:var(--dusk);font-size:13px}
+  footer{font:13px var(--mono);color:var(--dusk);padding:24px 0;border-top:1px solid var(--edge)}
+  @media (max-width:900px){
+    .hero,.contact{grid-template-columns:1fr}h1{font-size:52px}
+    .bento{grid-template-columns:1fr}.tile.big,.tile.mid,.tile.sm{grid-column:auto;grid-row:auto}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<main>
+  <section class="hero" aria-labelledby="h1" style="border-top:0;padding-top:24px">
+    <div>
+      <p class="eyebrow"><b>~/</b>hola, soy</p>
+      <h1 id="h1">Hilario <span>Nava</span></h1>
+      <p class="lead"><b>Ingeniero de Software Full Stack potenciado con IA.</b> Construyo apps web con React, TypeScript y Supabase, e integro pagos online para que los negocios vendan más.</p>
+      <div class="ctas">
+        <a class="btn primary" href="#contacto">Contrátame</a>
+        <a class="btn" href="#trabajo">Ver proyectos</a>
+        <a class="btn" href="#">CV ↓</a>
+      </div>
+    </div>
+
+    <div class="term" aria-label="Terminal interactiva con información de Hilario">
+      <div class="bar"><i></i><i></i><i></i><span>hilario@nava: ~</span></div>
+      <div class="tabs" role="tablist" aria-label="Comandos">
+        <button role="tab" aria-selected="true" aria-controls="screen" data-cmd="whoami">whoami</button>
+        <button role="tab" aria-selected="false" aria-controls="screen" data-cmd="stack">cat stack.txt</button>
+        <button role="tab" aria-selected="false" aria-controls="screen" data-cmd="proyectos">ls proyectos/</button>
+        <button role="tab" aria-selected="false" aria-controls="screen" data-cmd="contacto">./contacto.sh</button>
+      </div>
+      <div id="screen" class="screen" role="tabpanel" aria-live="polite"></div>
+      <p class="hint">Elige un comando ↑</p>
+    </div>
+  </section>
+
+  <section id="trabajo" aria-labelledby="w-h">
+    <div class="sec-h">
+      <div><p class="eyebrow"><b>~/</b>proyectos</p><h2 id="w-h">Lo que he construido</h2></div>
+      <a class="btn" href="https://github.com/Hilary97">Todo en GitHub ↗</a>
+    </div>
+    <div class="bento">
+      <a class="tile big" href="https://github.com/Hilary97/neo">
+        <span class="tag">★ destacado · pagos online</span>
+        <h3>Neo — de solo efectivo a vender online</h3>
+        <p>Landing de Hot Sale con PayPal y Mercado Pago integrados. Construida en días con agentes de IA en el flujo de desarrollo.</p>
+        <ul class="chips"><li>React</li><li>PayPal</li><li>Mercado Pago</li><li>IA</li></ul>
+        <span class="go">ver código →</span>
+      </a>
+      <a class="tile mid" href="https://github.com/Hilary97/invitaciones-web">
+        <span class="tag">landing · eventos</span><h3>Invitaciones digitales</h3>
+        <p>Bodas, XV años y eventos, con contacto por WhatsApp y correo.</p><span class="go">ver código →</span>
+      </a>
+      <a class="tile mid" href="https://github.com/Hilary97/Proyecto_CRUD.git">
+        <span class="tag">crud</span><h3>Biblioteca CRUD</h3>
+        <p>Gestión de libros con operaciones CRUD completas.</p><span class="go">ver código →</span>
+      </a>
+      <a class="tile sm" href="https://github.com/Hilary97/Codigo-de-Plataforma-RuralNet.git"><span class="tag">plataforma</span><h3>Rural Net</h3><p>Conectividad para zonas rurales.</p></a>
+      <a class="tile sm" href="https://github.com/Hilary97/App-del-clima..git"><span class="tag">api</span><h3>GeoWeather</h3><p>Clima con búsqueda por ubicación.</p></a>
+      <a class="tile sm" href="https://github.com/Hilary97/Proyecto_Bootcamp.git"><span class="tag">bootcamp</span><h3>Landing Page</h3><p>Proyecto final Full Stack.</p></a>
+    </div>
+  </section>
+
+  <section id="contacto" aria-labelledby="c-h">
+    <div class="contact">
+      <div>
+        <p class="eyebrow"><b>~/</b>contacto</p>
+        <h2 id="c-h">¿Tu equipo necesita un dev full stack?</h2>
+        <p class="lead" style="margin-top:16px">Abierto a oportunidades remotas y presenciales. Escríbeme por el canal que prefieras.</p>
+      </div>
+      <div class="links">
+        <a href="mailto:navahilario499@gmail.com">correo <span>navahilario499@gmail.com</span></a>
+        <a href="https://www.linkedin.com/in/hilario-nava">linkedin <span>/in/hilario-nava</span></a>
+        <a href="https://wa.me/523313023706">whatsapp <span>mensaje directo</span></a>
+        <a href="https://github.com/Hilary97">github <span>@Hilary97</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>© 2026 Hilario Nava · construido con React, Tailwind y Motion</footer>
+</div>
+
+<script>
+  const out = {
+    whoami: `<span class="p">$</span> whoami
+<span class="k">Hilario Nava</span> — Ingeniero en Sistemas Computacionales
+rol: Full Stack · Desarrollo Web Moderno · Arquitectura
+flujo: Claude + ChatGPT con <span class="k">Gentle AI</span>
+certificados: Full Stack · JavaScript · Inglés A2
+<span class="m"># estado: abierto a oportunidades</span>`,
+    stack: `<span class="p">$</span> cat stack.txt
+<span class="k">frontend</span>  React, TypeScript, JavaScript, Next.js, Vite
+<span class="k">backend</span>   Node.js, Supabase, MySQL
+<span class="k">pagos</span>     PayPal, Mercado Pago
+<span class="k">entrega</span>   Git/GitHub, Vercel, Neovim`,
+    proyectos: `<span class="p">$</span> ls proyectos/
+<span class="k">neo/</span>                 pagos online   ★
+<span class="k">invitaciones-web/</span>    landing eventos
+<span class="k">biblioteca-crud/</span>     CRUD completo
+<span class="k">rural-net/</span>           plataforma web
+<span class="k">geoweather/</span>          app del clima`,
+    contacto: `<span class="p">$</span> ./contacto.sh
+correo    <a href="mailto:navahilario499@gmail.com">navahilario499@gmail.com</a>
+linkedin  <a href="https://www.linkedin.com/in/hilario-nava">/in/hilario-nava</a>
+whatsapp  <a href="https://wa.me/523313023706">wa.me/523313023706</a>`
+  };
+  const screen = document.getElementById('screen');
+  const tabs = [...document.querySelectorAll('[role=tab]')];
+  const show = (cmd) => {
+    tabs.forEach(t => t.setAttribute('aria-selected', t.dataset.cmd === cmd));
+    screen.innerHTML = '<pre style="margin:0;font:inherit;white-space:pre-wrap">' + out[cmd] + '\n<span class="p">$</span> <span class="caret" aria-hidden="true"></span></pre>';
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => show(t.dataset.cmd));
+    t.addEventListener('keydown', e => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      const n = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+      n.focus(); show(n.dataset.cmd);
+    });
+  });
+  show('whoami');
+</script>
+</body>
+</html>

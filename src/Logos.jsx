@@ -16,47 +16,73 @@ import logoTypeScript from "/typescript.svg";
 import logoGentleAI from "/gentle-ai.png";
 import { Reveal, Stagger, Item, Eyebrow } from "./motion.jsx";
 
-const stack = [
-  { src: reactLogo, name: "React" },
-  { src: logoJavaScript, name: "JavaScript" },
-  { src: logoTypeScript, name: "TypeScript" },
-  { src: viteLogo, name: "Vite" },
-  { src: logoNode, name: "Node.js" },
-  { src: logoNext, name: "Next.js" },
-  { src: logoMySQL, name: "MySQL" },
-  { src: logoSupabase, name: "Supabase" },
-  { src: logoHTML, name: "HTML5" },
-  { src: logoCSS, name: "CSS3" },
-  { src: logoGit, name: "Git" },
-  { src: logoVercel, name: "Vercel" },
-  { src: logoNeovim, name: "Neovim" },
-  { src: logoClaude, name: "Claude" },
-  { src: logoOpenAI, name: "ChatGPT" },
-  { src: logoGentleAI, name: "Gentle AI" },
+const grupos = [
+  {
+    titulo: "frontend",
+    items: [
+      { src: reactLogo, name: "React" },
+      { src: logoTypeScript, name: "TypeScript" },
+      { src: logoJavaScript, name: "JavaScript" },
+      { src: logoNext, name: "Next.js" },
+      { src: viteLogo, name: "Vite" },
+      { src: logoHTML, name: "HTML5" },
+      { src: logoCSS, name: "CSS3" },
+    ],
+  },
+  {
+    titulo: "backend y datos",
+    items: [
+      { src: logoNode, name: "Node.js" },
+      { src: logoSupabase, name: "Supabase" },
+      { src: logoMySQL, name: "MySQL" },
+    ],
+  },
+  {
+    titulo: "flujo y entrega",
+    items: [
+      { src: logoGit, name: "Git/GitHub" },
+      { src: logoVercel, name: "Vercel" },
+      { src: logoNeovim, name: "Neovim" },
+      { src: logoClaude, name: "Claude" },
+      { src: logoOpenAI, name: "ChatGPT" },
+      { src: logoGentleAI, name: "Gentle AI" },
+    ],
+  },
 ];
 
 export function Logos() {
   return (
-    <section id="stack" className="py-24">
+    <section id="stack" className="border-t border-edge/60 py-24">
       <Reveal>
         <Eyebrow>stack</Eyebrow>
         <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
-          Herramientas de trabajo
+          Con qué trabajo
         </h2>
+        <p className="mt-3 max-w-2xl text-dusk">
+          Agrupado por lo que aporto al equipo.
+        </p>
       </Reveal>
 
-      <Stagger className="mt-12 grid grid-cols-3 gap-4 sm:grid-cols-4 lg:grid-cols-6">
-        {stack.map((tool) => (
-          <Item key={tool.name}>
-            <div className="group flex flex-col items-center gap-3 rounded-2xl border border-edge bg-panel/60 p-5 transition hover:-translate-y-1 hover:border-lilac hover:shadow-lg hover:shadow-iris/20">
-              <img
-                src={tool.src}
-                alt={`Logo de ${tool.name}`}
-                className="h-12 w-12 object-contain transition group-hover:scale-110"
-              />
-              <span className="font-mono text-xs text-dusk group-hover:text-mist">
-                {tool.name}
-              </span>
+      <Stagger className="mt-10 grid gap-5 lg:grid-cols-3" step={0.1}>
+        {grupos.map((g) => (
+          <Item key={g.titulo}>
+            <div className="h-full rounded-2xl border border-edge bg-panel/70 p-6">
+              <h3 className="font-mono text-sm text-lilac">{g.titulo}</h3>
+              <ul className="mt-4 flex flex-wrap gap-2">
+                {g.items.map((t) => (
+                  <li
+                    key={t.name}
+                    className="flex items-center gap-2 rounded-full border border-edge bg-abyss/60 py-1.5 pr-3.5 pl-2 text-sm text-mist"
+                  >
+                    <img
+                      src={t.src}
+                      alt=""
+                      className="h-5 w-5 object-contain"
+                    />
+                    {t.name}
+                  </li>
+                ))}
+              </ul>
             </div>
           </Item>
         ))}

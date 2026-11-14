@@ -13,7 +13,7 @@ const links = [
 
 const docs = [
   { label: "Título", href: titulo },
-  { label: "CV", href: CV },
+  { label: "Descargar CV", href: CV, primary: true },
 ];
 
 export function Header() {
@@ -44,7 +44,11 @@ export function Header() {
               href={d.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-edge px-4 py-1.5 font-mono text-sm text-mist transition hover:border-lilac hover:text-lilac"
+              className={
+                d.primary
+                  ? "rounded-full bg-ember px-4 py-1.5 text-sm font-semibold text-abyss transition hover:shadow-lg hover:shadow-ember/30"
+                  : "rounded-full border border-edge px-4 py-1.5 font-mono text-sm text-mist transition hover:border-lilac hover:text-lilac"
+              }
             >
               {d.label}
             </a>

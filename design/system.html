@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sistema de diseño — Portafolio Hilario</title>
+<style>
+  :root{--abyss:#0b0817;--panel:#151029;--edge:#2a2150;--mist:#eeeafb;--dusk:#a79fc9;--lilac:#a78bfa;--iris:#7c5cf6;--ember:#ffb454;
+    --display:ui-sans-serif,system-ui,sans-serif;--body:ui-sans-serif,system-ui,sans-serif;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--abyss);color:var(--mist);font-family:var(--body);padding:56px 64px}
+  h1{font-family:var(--display);font-size:40px;margin:0 0 8px}
+  h2{font-family:var(--mono);font-size:13px;color:var(--ember);text-transform:lowercase;letter-spacing:.08em;margin:48px 0 16px}
+  p{color:var(--dusk);margin:0}
+  .row{display:flex;flex-wrap:wrap;gap:16px}
+  .sw{width:150px;border:1px solid var(--edge);border-radius:16px;overflow:hidden;background:var(--panel)}
+  .sw div{height:80px}
+  .sw span{display:block;padding:10px 12px;font:12px var(--mono);color:var(--dusk)}
+  .sw b{display:block;color:var(--mist);font-weight:600}
+  .type > *{margin:0 0 12px}
+  .btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:12px 22px;font-weight:600;text-decoration:none;font-size:15px}
+  .btn-primary{background:var(--ember);color:var(--abyss)}
+  .btn-secondary{border:1px solid var(--edge);color:var(--mist)}
+  .btn:focus-visible{outline:2px solid var(--lilac);outline-offset:3px}
+  .card{width:360px;border:1px solid var(--edge);background:rgb(21 16 41 / .7);border-radius:24px;overflow:hidden}
+  .card .img{aspect-ratio:16/9;background:linear-gradient(135deg,var(--iris),var(--abyss))}
+  .card .c{padding:24px}
+  .badge{background:rgb(255 180 84 / .15);color:var(--ember);font:12px var(--mono);padding:4px 12px;border-radius:999px}
+  .outline{color:transparent;-webkit-text-stroke:2px var(--lilac);font-family:var(--display);font-size:64px;font-weight:800}
+  .box{border:1px solid var(--edge);background:var(--panel);padding:16px 20px;font:12px var(--mono);color:var(--dusk)}
+</style>
+</head>
+<body>
+<main>
+  <h1>Sistema de diseño</h1>
+  <p>Tokens de <code>src/index.css</code>. Las fuentes Syne, Instrument Sans y JetBrains Mono se muestran aquí con sus fuentes de respaldo.</p>
+
+  <h2>colores</h2>
+  <div class="row">
+    <div class="sw"><div style="background:#0b0817"></div><span><b>abyss</b>#0b0817</span></div>
+    <div class="sw"><div style="background:#151029"></div><span><b>panel</b>#151029</span></div>
+    <div class="sw"><div style="background:#2a2150"></div><span><b>edge</b>#2a2150</span></div>
+    <div class="sw"><div style="background:#eeeafb"></div><span><b>mist</b>#eeeafb</span></div>
+    <div class="sw"><div style="background:#a79fc9"></div><span><b>dusk</b>#a79fc9</span></div>
+    <div class="sw"><div style="background:#a78bfa"></div><span><b>lilac</b>#a78bfa</span></div>
+    <div class="sw"><div style="background:#7c5cf6"></div><span><b>iris</b>#7c5cf6</span></div>
+    <div class="sw"><div style="background:#ffb454"></div><span><b>ember</b>#ffb454</span></div>
+  </div>
+
+  <h2>tipografía</h2>
+  <div class="type">
+    <p style="font:800 56px var(--display);color:var(--mist)">Display — Hilario Nava</p>
+    <p style="font:700 32px var(--display);color:var(--mist)">Encabezado de sección</p>
+    <p style="font:18px/1.6 var(--body)">Cuerpo: desarrollo software para negocios reales.</p>
+    <p style="font:13px var(--mono);color:var(--lilac)">~/mono-eyebrow · Ver código →</p>
+  </div>
+
+  <h2>radio y espaciado</h2>
+  <div class="row">
+    <div class="box" style="border-radius:999px">rounded-full</div>
+    <div class="box" style="border-radius:16px">rounded-2xl 16px</div>
+    <div class="box" style="border-radius:24px">rounded-3xl 24px · p-6 · py-24 · max-w-6xl</div>
+  </div>
+
+  <h2>componentes</h2>
+  <div class="row" style="align-items:flex-start;gap:32px">
+    <div class="row" style="flex-direction:column;align-items:flex-start">
+      <a class="btn btn-primary" href="#">Ver proyectos</a>
+      <a class="btn btn-secondary" href="#">Contáctame</a>
+      <span class="badge">destacado</span>
+      <span class="outline">Nava</span>
+    </div>
+    <article class="card">
+      <div class="img" role="img" aria-label="Imagen de ejemplo"></div>
+      <div class="c">
+        <h3 style="margin:0 0 8px;font-family:var(--display)">Neo — Hot Sale Landing</h3>
+        <p style="font-size:14px">Landing de venta con pagos online: PayPal y Mercado Pago integrados.</p>
+        <p style="margin-top:16px;font:14px var(--mono);color:var(--lilac)">Ver código →</p>
+      </div>
+    </article>
+  </div>
+</main>
+</body>
+</html>

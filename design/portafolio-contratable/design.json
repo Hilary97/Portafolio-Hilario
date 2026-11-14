@@ -1,0 +1,9 @@
+{
+  "title": "Portafolio contratable",
+  "brief": "Rediseño del portafolio de Hilario Nava para llamar la atención de reclutadores y conseguir trabajo como desarrollador full stack",
+  "artboards": [
+    { "file": "01-recruiter-first.html", "title": "Recruiter first", "tradeoff": "Rol, disponibilidad y CTA visibles en 5 segundos; casos con problema/solución; menos dramático visualmente", "width": 1440, "height": 900 },
+    { "file": "02-editorial-case-study.html", "title": "Editorial case study", "tradeoff": "Tipografía gigante y un caso de estudio narrado: memorable y senior; requiere más scroll para ver todo", "width": 1440, "height": 900 },
+    { "file": "03-terminal-interactive.html", "title": "Terminal interactiva + bento", "tradeoff": "Identidad dev fuerte y un detalle interactivo que se recuerda; puede leerse como 'demasiado técnico' para RR. HH. no técnico", "width": 1440, "height": 900 }
+  ]
+}
