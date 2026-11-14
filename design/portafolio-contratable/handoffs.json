@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "chosen": "01-recruiter-first.html",
+  "chosen": "03-terminal-interactive.html",
   "handoffs": {
     "01-recruiter-first.html": {
       "status": "implemented",
@@ -9,6 +9,15 @@
       "startedAt": "2026-11-14T04:24:03.198Z",
       "implementedAt": "2026-11-14T04:24:43.273Z",
       "note": "Hero, case studies, grouped stack, CTA contact and CV button implemented in React/Tailwind. Sobre and Certificados kept after stack.",
+      "previewUrl": "http://localhost:5173/"
+    },
+    "03-terminal-interactive.html": {
+      "status": "implemented",
+      "queued": false,
+      "sentAt": "2026-11-14T06:36:57.741Z",
+      "startedAt": "2026-11-14T06:37:06.738Z",
+      "implementedAt": "2026-11-14T06:38:18.274Z",
+      "note": "Hero with interactive terminal (Terminal.jsx), bento projects, contact channel list. Stack, Sobre and Certificados sections kept.",
       "previewUrl": "http://localhost:5173/"
     }
   }

@@ -1,170 +1,125 @@
 import { FaGithub } from "react-icons/fa";
-import ImgBiblioteca from "/IMGBiblioteca.png";
-import ImgLandingPage from "/IMGLandingPage.png";
-import ImgRuralNet from "/IMGRuralNet.png";
-import ImgAppClima from "/IMGAppClima.png";
-import ImgNeo from "/IMGNeo.svg";
-import ImgInvitaciones from "/IMGInvitaciones.svg";
-import { Reveal, Stagger, Item, TiltCard, Eyebrow } from "./motion.jsx";
+import { Reveal, Stagger, Item, Eyebrow } from "./motion.jsx";
 
-const casos = [
+const proyectos = [
   {
-    img: ImgNeo,
-    alt: "Ilustración de la landing Neo",
-    titulo: "Neo — Hot Sale Landing",
-    destacado: true,
-    problema: "El negocio solo cobraba en efectivo y en persona.",
-    solucion: "Landing de venta con PayPal y Mercado Pago integrados.",
-    resultado: "Venta online lista en días, con agentes de IA en el flujo.",
-    stack: ["React", "PayPal", "Mercado Pago", "Agentes de IA"],
+    size: "big",
+    tag: "★ destacado · pagos online",
+    titulo: "Neo — de solo efectivo a vender online",
+    desc: "Landing de Hot Sale con PayPal y Mercado Pago integrados. Construida en días con agentes de IA en el flujo de desarrollo.",
+    stack: ["React", "PayPal", "Mercado Pago", "IA"],
     url: "https://github.com/Hilary97/neo",
   },
   {
-    img: ImgInvitaciones,
-    alt: "Ilustración de una invitación y un sobre en tonos dorados",
+    size: "mid",
+    tag: "landing · eventos",
     titulo: "Invitaciones digitales",
-    problema: "Promocionar invitaciones para bodas, XV años y eventos.",
-    solucion: "Landing ligera con contacto directo por WhatsApp y correo.",
-    resultado: "Los clientes contactan en un clic desde el celular.",
-    stack: ["HTML", "CSS", "JavaScript"],
+    desc: "Bodas, XV años y eventos, con contacto por WhatsApp y correo.",
     url: "https://github.com/Hilary97/invitaciones-web",
   },
-];
-
-const otros = [
   {
-    img: ImgBiblioteca,
+    size: "mid",
+    tag: "crud",
     titulo: "Biblioteca CRUD",
     desc: "Gestión de libros con operaciones CRUD completas.",
     url: "https://github.com/Hilary97/Proyecto_CRUD.git",
   },
   {
-    img: ImgRuralNet,
+    tag: "plataforma",
     titulo: "Rural Net",
-    desc: "Plataforma web para conectividad en zonas rurales.",
+    desc: "Conectividad para zonas rurales.",
     url: "https://github.com/Hilary97/Codigo-de-Plataforma-RuralNet.git",
   },
   {
-    img: ImgAppClima,
+    tag: "api",
     titulo: "GeoWeather",
-    desc: "App del clima con búsqueda por ubicación.",
+    desc: "Clima con búsqueda por ubicación.",
     url: "https://github.com/Hilary97/App-del-clima..git",
   },
   {
-    img: ImgLandingPage,
+    tag: "bootcamp",
     titulo: "Landing Page",
-    desc: "Proyecto final del bootcamp Full Stack.",
+    desc: "Proyecto final Full Stack.",
     url: "https://github.com/Hilary97/Proyecto_Bootcamp.git",
   },
 ];
 
-const campos = [
-  ["problema", "problema"],
-  ["solución", "solucion"],
-  ["resultado", "resultado"],
-];
+const tamaños = {
+  big: {
+    span: "lg:col-span-4 lg:row-span-2",
+    bg: "bg-panel bg-[radial-gradient(circle_at_85%_15%,rgb(255_180_84/0.18),transparent_45%),radial-gradient(circle_at_10%_90%,rgb(124_92_246/0.3),transparent_50%)]",
+  },
+  mid: { span: "lg:col-span-2", bg: "bg-panel/75" },
+  sm: { span: "lg:col-span-2", bg: "bg-panel/75" },
+};
 
 export function Proyectos() {
   return (
     <section id="proyectos" className="border-t border-edge/60 py-24">
-      <Reveal>
-        <Eyebrow>casos-de-estudio</Eyebrow>
-        <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
-          Problemas reales, resueltos
-        </h2>
-        <p className="mt-3 max-w-2xl text-dusk">
-          Cada proyecto muestra el problema del negocio, lo que construí y el
-          stack que usé.
-        </p>
+      <Reveal className="mb-8 flex flex-wrap items-end justify-between gap-6">
+        <div>
+          <Eyebrow>proyectos</Eyebrow>
+          <h2 className="mt-2 font-display text-3xl font-bold tracking-tight sm:text-4xl">
+            Lo que he construido
+          </h2>
+        </div>
+        <a
+          href="https://github.com/Hilary97"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex min-h-[46px] items-center gap-2 rounded-full border border-edge px-6 font-semibold text-mist transition hover:-translate-y-0.5 hover:border-lilac"
+        >
+          <FaGithub aria-hidden="true" /> Todo en GitHub ↗
+        </a>
       </Reveal>
 
-      <Stagger className="mt-10 grid gap-5" step={0.1}>
-        {casos.map((c) => (
-          <Item key={c.titulo}>
-            <article className="grid gap-7 rounded-3xl border border-edge bg-panel/70 p-5 transition hover:border-lilac md:grid-cols-[320px_1fr]">
-              <div className="flex aspect-[16/10] items-center justify-center overflow-hidden rounded-2xl border border-edge bg-abyss">
-                <img
-                  src={c.img}
-                  alt={c.alt}
-                  className="h-full w-full object-contain p-5"
-                />
-              </div>
-              <div>
-                {c.destacado && (
-                  <span className="rounded-full bg-ember/15 px-3 py-1 font-mono text-xs text-ember">
-                    destacado
-                  </span>
-                )}
-                <h3 className="mt-2 mb-4 font-display text-2xl font-bold">
-                  {c.titulo}
-                </h3>
-                <dl className="mb-4 grid gap-4 sm:grid-cols-3">
-                  {campos.map(([label, key]) => (
-                    <div key={key}>
-                      <dt className="font-mono text-xs text-lilac">{label}</dt>
-                      <dd className="mt-1 text-sm text-dusk">{c[key]}</dd>
-                    </div>
-                  ))}
-                </dl>
-                <ul className="mb-4 flex flex-wrap gap-2" aria-label="Stack">
-                  {c.stack.map((s) => (
-                    <li
-                      key={s}
-                      className="rounded-full border border-edge px-2.5 py-1 font-mono text-xs text-mist"
-                    >
-                      {s}
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href={c.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 font-mono text-sm text-lilac transition hover:text-ember"
-                >
-                  <FaGithub /> Ver código →
-                </a>
-              </div>
-            </article>
-          </Item>
-        ))}
-      </Stagger>
-
-      <Stagger
-        className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
-        step={0.08}
-      >
-        {otros.map((p) => (
-          <Item key={p.titulo}>
-            <TiltCard
-              max={5}
-              className="group h-full overflow-hidden rounded-2xl border border-edge bg-panel transition hover:border-lilac"
-            >
+      <Stagger className="grid gap-4 lg:grid-cols-6" step={0.08}>
+        {proyectos.map((p) => {
+          const size = p.size ?? "sm";
+          const t = tamaños[size];
+          const big = size === "big";
+          return (
+            <Item key={p.titulo} className={t.span}>
               <a
                 href={p.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-full flex-col"
+                className={`flex h-full flex-col gap-2.5 rounded-3xl border border-edge p-6 transition hover:-translate-y-1 hover:border-lilac ${t.bg}`}
               >
-                <div className="aspect-video overflow-hidden">
-                  <img
-                    src={p.img}
-                    alt={`Captura del proyecto ${p.titulo}`}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <div className="flex flex-1 flex-col gap-1.5 p-4">
-                  <h3 className="font-display font-bold">{p.titulo}</h3>
-                  <p className="text-sm text-dusk">{p.desc}</p>
-                  <span className="mt-auto flex items-center gap-2 pt-2 font-mono text-xs text-lilac group-hover:text-ember">
-                    <FaGithub /> Ver código →
+                <span className="font-mono text-xs text-ember">{p.tag}</span>
+                <h3
+                  className={`font-display font-bold ${
+                    big ? "text-3xl leading-tight sm:text-4xl" : "text-xl"
+                  }`}
+                >
+                  {p.titulo}
+                </h3>
+                <p
+                  className={`text-dusk ${big ? "max-w-[44ch] text-[17px]" : "text-sm"}`}
+                >
+                  {p.desc}
+                </p>
+                {p.stack && (
+                  <ul className="flex flex-wrap gap-1.5" aria-label="Stack">
+                    {p.stack.map((s) => (
+                      <li
+                        key={s}
+                        className="rounded-full border border-edge px-2.5 py-0.5 font-mono text-xs"
+                      >
+                        {s}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {size !== "sm" && (
+                  <span className="mt-auto pt-2 font-mono text-[13px] text-lilac">
+                    ver código →
                   </span>
-                </div>
+                )}
               </a>
-            </TiltCard>
-          </Item>
-        ))}
+            </Item>
+          );
+        })}
       </Stagger>
     </section>
   );

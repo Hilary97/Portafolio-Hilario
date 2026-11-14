@@ -1,56 +1,60 @@
-import { FaEnvelope, FaWhatsapp, FaLinkedin, FaGithub } from "react-icons/fa";
-import CV from "/Cv_Hilario_Portafolio.png";
 import { Reveal, Eyebrow } from "./motion.jsx";
 
-const secundarios = [
-  { label: "WhatsApp", href: "https://wa.me/523313023706", icon: FaWhatsapp },
+const canales = [
   {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/hilario-nava",
-    icon: FaLinkedin,
+    label: "correo",
+    detalle: "navahilario499@gmail.com",
+    href: "mailto:navahilario499@gmail.com",
   },
-  { label: "GitHub", href: "https://github.com/Hilary97", icon: FaGithub },
-  { label: "Descargar CV", href: CV },
+  {
+    label: "linkedin",
+    detalle: "/in/hilario-nava",
+    href: "https://www.linkedin.com/in/hilario-nava",
+  },
+  {
+    label: "whatsapp",
+    detalle: "mensaje directo",
+    href: "https://wa.me/523313023706",
+  },
+  {
+    label: "github",
+    detalle: "@Hilary97",
+    href: "https://github.com/Hilary97",
+  },
 ];
 
 export function Contacto() {
   return (
-    <section
-      id="contacto"
-      className="relative border-t border-edge/60 py-28 text-center"
-    >
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgb(124_92_246/0.2),transparent_70%)]"
-      />
-      <Reveal className="relative">
-        <Eyebrow>contacto</Eyebrow>
-        <h2 className="mt-3 font-display text-3xl font-bold sm:text-5xl">
-          ¿Buscas un desarrollador full stack?
-        </h2>
-        <p className="mx-auto mt-4 max-w-xl text-dusk">
-          Escríbeme, agenda una llamada o descarga mi CV.
-        </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <a
-            href="mailto:navahilario499@gmail.com"
-            className="inline-flex min-h-11 items-center gap-2 rounded-full bg-ember px-6 font-semibold text-abyss transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-ember/30"
-          >
-            <FaEnvelope aria-hidden="true" /> Escríbeme por correo
-          </a>
-          {secundarios.map(({ label, href, icon: Icon }) => (
+    <section id="contacto" className="border-t border-edge/60 py-24">
+      <div className="grid items-center gap-10 lg:grid-cols-[1.2fr_1fr]">
+        <Reveal>
+          <Eyebrow>contacto</Eyebrow>
+          <h2 className="mt-2 font-display text-4xl leading-none font-bold tracking-tight sm:text-5xl">
+            ¿Tu equipo necesita un dev full stack?
+          </h2>
+          <p className="mt-4 max-w-[46ch] text-lg text-dusk">
+            Abierto a oportunidades remotas y presenciales. Escríbeme por el
+            canal que prefieras.
+          </p>
+        </Reveal>
+
+        <Reveal delay={0.1} className="grid gap-2.5">
+          {canales.map((c) => (
             <a
-              key={label}
-              href={href}
-              target="_blank"
+              key={c.label}
+              href={c.href}
+              target={c.href.startsWith("mailto") ? undefined : "_blank"}
               rel="noopener noreferrer"
-              className="inline-flex min-h-11 items-center gap-2 rounded-full border border-edge px-6 text-mist transition hover:-translate-y-0.5 hover:border-lilac hover:text-lilac"
+              className="flex min-h-14 items-center justify-between gap-4 rounded-2xl border border-edge bg-panel px-5 font-mono text-[15px] transition hover:border-ember hover:text-ember"
             >
-              {Icon && <Icon aria-hidden="true" />} {label}
+              {c.label}
+              <span className="truncate text-[13px] text-dusk">
+                {c.detalle}
+              </span>
             </a>
           ))}
-        </div>
-      </Reveal>
+        </Reveal>
+      </div>
     </section>
   );
 }
