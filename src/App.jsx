@@ -21,12 +21,10 @@ function Sobre() {
         <div className="flex flex-col gap-6 text-lg leading-relaxed text-dusk">
           <Reveal delay={0.05}>
             <p>
-              Desarrollo software para negocios reales. Mi punto de venta ya se
-              usa en una pizzería local: integra catálogo, ventas en efectivo
-              con cálculo de cambio, devoluciones y cierre de caja con{" "}
-              <b className="font-semibold text-ember">
-                React, TypeScript y Supabase (PostgreSQL)
-              </b>
+              Desarrollo software para negocios reales. Creé una landing de
+              invitaciones digitales para bodas, quinceañeras, cumpleaños y
+              eventos corporativos, con contacto directo por{" "}
+              <b className="font-semibold text-ember">WhatsApp y correo</b>
               .
             </p>
           </Reveal>
